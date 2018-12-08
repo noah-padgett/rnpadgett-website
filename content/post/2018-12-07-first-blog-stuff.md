@@ -1,11 +1,16 @@
 ---
-title: First Blog Stuff
+title: Start of My Website
 author: ~
 date: '2018-12-07'
 slug: first-blog-stuff
-categories: []
+categories: ["Introduction"]
 tags: []
 image:
   caption: ''
   focal_point: ''
 ---
+
+
+I have finally entered the world of having my own website. This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want. 
+One of the major reasons I have started this website is to have a place to host my own writings.
+The purpose for this is to have a place to store a lot of the R tutorials I have been wanting to write. The topics may only be of interest to myself as I work through a project, but maybe one day someone will find these topics of interest. 

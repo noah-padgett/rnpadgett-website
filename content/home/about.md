@@ -25,11 +25,6 @@ weight = 5
   course = "BSc in Statistics and Psychology"
   institution = "University of Wisconsin - Whitewater"
   year = 2017
-  
-[[education.courses]]
-  course = "Non-degree Seeking General Education"
-  institution = "Caldwell Community College and Technical Institute"
-  year = 2014
  
 +++
 
