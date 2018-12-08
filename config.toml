@@ -9,7 +9,7 @@
 baseurl = "https://rnoahpadgett.netlify.com/"
 
 # Title of your site
-title = "Academic"
+title = "Padgett: Beyond-Stat"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -296,7 +296,7 @@ enableGitInfo = false
 
 [[menu.main]]
   name = "Publications"
-  url = "#publication"
+  url = "#publications"
   weight = 2
 
 [[menu.main]]

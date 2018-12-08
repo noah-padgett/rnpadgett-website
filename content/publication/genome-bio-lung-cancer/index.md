@@ -1,6 +1,6 @@
 +++
 title = "Interaction between the microbiome and TP53 in human lung cancer"
-date = 2018-01-22T00:00:00
+date = 2018-08-01T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -72,3 +72,4 @@ math = true
   focal_point = ""
 +++
 
+In this project, I contributed to the statistical analyses and making of figures.
