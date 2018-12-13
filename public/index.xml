@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Padgett: Beyond-Stat on Padgett: Beyond-Stat</title>
+    <title>Padgett: Beyond-STAT on Padgett: Beyond-STAT</title>
     <link>/</link>
-    <description>Recent content in Padgett: Beyond-Stat on Padgett: Beyond-Stat</description>
+    <description>Recent content in Padgett: Beyond-STAT on Padgett: Beyond-STAT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -11,16 +11,79 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Start of My Website</title>
+      <title>Introduction to R and Simulating Data</title>
+      <link>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</link>
+      <pubDate>Mon, 10 Dec 2018 21:13:14 -0500</pubDate>
+      
+      <guid>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</guid>
+      <description>
+
+
+&lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.&lt;/p&gt;
+&lt;p&gt;Anyways, to install R follow these steps:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://www.r-project.org/&#34; class=&#34;uri&#34;&gt;https://www.r-project.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Click on ‘to download R’&lt;/li&gt;
+&lt;li&gt;Choose a ‘CRAN mirror’, a CRAN mirror is where your computer knows to look on the internet to download the software. I suggest &lt;a href=&#34;https://cran.revolutionanalytics.com/&#34; class=&#34;uri&#34;&gt;https://cran.revolutionanalytics.com/&lt;/a&gt; which is based out of Dallas.&lt;/li&gt;
+&lt;li&gt;Select the download that is approriate for your computer.&lt;/li&gt;
+&lt;li&gt;Then scroll down to the download: R-3.5.1.pkg (mac) or install for the first time (windows).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These steps will help you install R, next we need to download R Studio. R Studio is an interface to use R that is much more friendly and easier to work with. You will see this when you open both.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Go to &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scroll down to ‘Installers for Supported Platforms’&lt;/li&gt;
+&lt;li&gt;Select either the windows or mac version&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Now that we have R and R studio downloaed, let’s dive into an Intro to Simulation.&lt;/p&gt;
+&lt;div id=&#34;brief-introduction-to-probability&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;em&gt;Brief&lt;/em&gt; Introduction to Probability&lt;/h2&gt;
+&lt;p&gt;Yes, we are starting with probability. Before we can talk about simulating random data, we need to talk briefly about probability.&lt;/p&gt;
+&lt;p&gt;Let’s say we have a quarter. A quarter has two sides, HEADS and TAILS. These two outcomes are possibly if we flip a coin once. A coin is called ‘fair’ if both sides have the same likelihood of occuring. This means that over repeated flips of our coin, we would expect that each outcome (H vs. T) to occur approximately the same number of times. Therefore, if a coin is fair, each outcome H and T will occur 50% of the time. In other words, each outcome has a 0.5 probability of occuring.&lt;/p&gt;
+&lt;p&gt;This is definition note: a probability is strictly between 0 and 1. If a probability if said to be outside this range, then the value cannot be a probability.&lt;/p&gt;
+&lt;p&gt;Probability is based on taking a &lt;em&gt;sample&lt;/em&gt; from a &lt;em&gt;population&lt;/em&gt;. A population is what is often of interest, but we rarely have access to the entire population. The US census is an attempt to get information from the entire US population. Because of cost and time, we take sufficiently large samples from a population to gain insight into the population. For example, to empirically test whether a coin is fair, we need to flip a coin many times generate the number of the times each outcomes occurs. If we flip a coin 1000 times and 500 of these turned out to fair, we likely have good evidence that our coin is fair. In contrast, if we flipped a coin 3 times and all 3 turned out to heads then the question becomes whether or not we ahve enough evidence to conclude that the coin is &lt;em&gt;not&lt;/em&gt; fair.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-a-datum&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Simulating a Datum&lt;/h2&gt;
+&lt;p&gt;In R, we can generate a single sample from a population very easily. Take the example of a coin flip. We can specify a population with two outcomes Heads and Tails with each outcome begin equally likely. From this population, we then take a single draw to obtain a datum.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+# Specify the possible outcomes. We do this by telling R to make an object with two values inside. This is done by using the command  c(.). Values within the () are stuck together
+population &amp;lt;- c(&amp;#39;HEADS&amp;#39;, &amp;#39;TAILS&amp;#39;)
+
+# Specify the Probability of each outcome in the population. Each value in the c(.) must align with the corresponding outcome in the population object. 
+outcomeProb &amp;lt;- c(.5, .5)
+
+# To generate the random draw, we use the following:
+# x = defined population
+# size = number of sample 
+# replace = TRUE/FALSE? Should sampling be done with replacement?
+sample(x=population, size=1, prob = outcomeProb, replace = T)
+## [1] &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;simulating-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Simulating Data&lt;/h2&gt;
+&lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
+sample(x=population, size=10, prob = outcomeProb, replace = T)
+##  [1] &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot;
+##  [9] &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Starting up Beyond-STAT</title>
       <link>/post/2018-12-07-hello/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-12-07-hello/</guid>
-      <description>&lt;p&gt;Hello people!&lt;/p&gt;
+      <description>&lt;p&gt;Hello people (or non-people, I aim to be inclusive)!&lt;/p&gt;
 
-&lt;p&gt;I have finally entered the world of having my own website. This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want.
+&lt;p&gt;My name is Noah, and this is the start of my website and blog! The
+I have finally entered the world of having my own website.
+This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want.
 One of the major reasons I have started this website is to have a place to host my own writings.
-The purpose for this is to have a place to store a lot of the R tutorials I have been wanting to write. The topics may only be of interest to myself as I work through a project, but maybe one day someone will find these topics of interest.&lt;/p&gt;
+The purpose for this is to have a place to store a lot of the R tutorials I have been wanting to write.
+The topics may only be of interest to myself as I work through a project, but maybe one day someone will find these topics of interest.&lt;/p&gt;
 </description>
     </item>
     

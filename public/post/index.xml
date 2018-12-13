@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Padgett: Beyond-Stat</title>
+    <title>Posts on Padgett: Beyond-STAT</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Padgett: Beyond-Stat</description>
+    <description>Recent content in Posts on Padgett: Beyond-STAT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Start of My Website</title>
+      <title>Starting up Beyond-STAT</title>
       <link>/post/2018-12-07-hello/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-12-07-hello/</guid>
-      <description>Hello people!
-I have finally entered the world of having my own website. This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want. One of the major reasons I have started this website is to have a place to host my own writings. The purpose for this is to have a place to store a lot of the R tutorials I have been wanting to write.</description>
+      <description>Hello people (or non-people, I aim to be inclusive)!
+My name is Noah, and this is the start of my website and blog! The I have finally entered the world of having my own website. This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want. One of the major reasons I have started this website is to have a place to host my own writings.</description>
     </item>
     
     <item>
