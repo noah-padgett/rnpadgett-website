@@ -13,13 +13,22 @@
     
     
     <item>
+      <title>Reporting Growth Mixture Models</title>
+      <link>/post/2018-12-17-gmm-reporting/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-12-17-gmm-reporting/</guid>
+      <description>I am currently wrapping up my work on a project investigating the alcoholic tendencies of adolesences. The data come from a data study in the United Kingdom, and I was brought on the project to help with the analysis. For this study, the aim was to investigate the presence of unobserved heterogeneity on the growth trajectories of this construct of &amp;lsquo;alcoholic tendencies.&amp;rsquo; For this analysis, I implemented a Growth Mixture Model (GMM).</description>
+    </item>
+    
+    <item>
       <title>Starting up Beyond-STAT</title>
       <link>/post/2018-12-07-hello/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/2018-12-07-hello/</guid>
       <description>Hello people (or non-people, I aim to be inclusive)!
-My name is Noah, and this is the start of my website and blog! The I have finally entered the world of having my own website. This feels like so much work so far, and I am happy to finally starting to have my own place to write what I want. One of the major reasons I have started this website is to have a place to host my own writings.</description>
+My name is Noah, and this is the start of my website and tutorial center! I&amp;rsquo;ve been pondering why I should create a wedbsite and the ebst reason I ahve come up with is to have a single place to store many of my ideas and struggles (with R in particular). The name I came up with Beyond-STAT is mean to sum up my work.</description>
     </item>
     
     <item>

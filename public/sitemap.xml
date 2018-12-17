@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>/post/</loc>
+      <lastmod>2018-12-17T10:35:45-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2018-12-17-gmm-reporting/</loc>
+      <lastmod>2018-12-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
     </url>
@@ -117,8 +133,26 @@
     
     <url>
     
+      <loc>/categories/gmm/</loc>
+      <lastmod>2018-12-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/introduction/</loc>
       <lastmod>2018-12-07T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/mixture-modeling/</loc>
+      <lastmod>2018-12-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -135,7 +169,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -144,7 +178,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -155,6 +189,15 @@
     
       <loc>/tags/r-markdown/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/reporting/</loc>
+      <lastmod>2018-12-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -198,15 +241,6 @@
     
     <url>
     
-      <loc>/tags/simulation/</loc>
-      <lastmod>2018-12-10T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/categories/simulation/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -216,7 +250,7 @@
     
     <url>
     
-      <loc>/tags/tutorial/</loc>
+      <loc>/tags/simulation/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -226,6 +260,15 @@
     <url>
     
       <loc>/categories/tutorial/</loc>
+      <lastmod>2018-12-10T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorial/</loc>
       <lastmod>2018-12-10T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
