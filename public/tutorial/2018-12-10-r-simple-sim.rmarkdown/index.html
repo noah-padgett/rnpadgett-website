@@ -123,9 +123,9 @@
   <meta property="og:description" content="Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary."><meta property="og:image" content="/img/Computer-Guy.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-12-10T21:13:14-05:00">
+  <meta property="article:published_time" content="2019-01-15T21:13:14-05:00">
   
-  <meta property="article:modified_time" content="2018-12-10T21:13:14-05:00">
+  <meta property="article:modified_time" content="2019-01-15T21:13:14-05:00">
   
 
   
@@ -347,9 +347,9 @@
 
   <span class="article-date">
     
-    <meta content="2018-12-10 21:13:14 -0500 -0500" itemprop="datePublished">
-    <time datetime="2018-12-10 21:13:14 -0500 -0500" itemprop="dateModified">
-      Dec 10, 2018
+    <meta content="2019-01-15 21:13:14 -0500 -0500" itemprop="datePublished">
+    <time datetime="2019-01-15 21:13:14 -0500 -0500" itemprop="dateModified">
+      Jan 15, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -446,6 +446,29 @@
 <li>Select either the windows or mac version</li>
 </ol>
 <p>Now that we have R and R studio downloaed, let’s dive into an Intro to Simulation.</p>
+<div id="intro-to-the-world-of-r" class="section level2">
+<h2>Intro to the World of R</h2>
+<p>R is a statistical programming language. Because R is a programming language there is a feel of technicality involved with using the software. One of the major difficulties I have found with helping others get started with R is getting over the initial struggle. The initial struggle is <em>OKAY</em>. I use R nearly everyday and I am constantly googling how to solve errors and complete my tasks. Basically, I want to convey that it’s perfectly normal to constantly get error messages and then ask the world of google how to fix your error.</p>
+<p>So, for starters, R can be broken down to being a fancy calculator. For example, below is a simple case for using R as simple calculator. We want to find the sum of “1 + 1”. R will automatically return the result of 2.</p>
+<pre class="r"><code>1 + 1
+## [1] 2</code></pre>
+<p>Now, this is a little boring. One of the major advantages of using a programming language is being able to store different operations into what is called an object. An object within R is simply a letter or word that represent another symbol or value. For example, we can store the summation of “1 + 1” into a single letter “x”. R does this assignment of values to words or letters through two different mechanisms. You can use “=” or “&lt;-” to make R assign values to objects/letters. However, within R it is customary to only use “&lt;-” for basic assignment while the “=” is reserved for arguments within functions (I will get to this in a moment).</p>
+<pre class="r"><code>## Assign the sum of 1 + 1 to x
+x &lt;- 1 + 1
+## Simply place &quot;x&quot; to see the value stored
+x 
+## [1] 2</code></pre>
+<div id="intro-to-simple-functions" class="section level3">
+<h3>Intro to Simple Functions</h3>
+<p>R is a functional programming language, which means that R is designed with tools that take in values to return a result. Now, this is super vague and not explicit enough to make sense. One of the simplest functions in R is the “print()” function. The print function takes in a single argument “x”. This means that based on the value supplied to the function print with the argument x, R will display the actual value(s) stored in x. For example, suppose we store the phrase “Hello People” in the object “y”. We can use the print() function to see what the value of “y” is when supplied to the functin.</p>
+<pre class="r"><code>## Store &quot;Hello People&quot; in y
+y &lt;- &quot;Hello People&quot;
+## Displaythe value of y
+print(x=y) ## x is theargument of print, and we want to print y
+## [1] &quot;Hello People&quot;</code></pre>
+<p>This concept of storing values into objects to use in functions is <strong>extremely</strong> important. We can utilize this idea in any number of ways we can imagine. The flexibility to choose how we use the simple rules of R provides us with a basis for manipulating data and doing more complex statistical analyses. But, for now I will talk a little bit about how R can be used to generate values randomly.</p>
+</div>
+</div>
 <div id="brief-introduction-to-probability" class="section level2">
 <h2><em>Brief</em> Introduction to Probability</h2>
 <p>Yes, we are starting with probability. Before we can talk about simulating random data, we need to talk briefly about probability.</p>
@@ -468,15 +491,15 @@ outcomeProb &lt;- c(.5, .5)
 # size = number of sample 
 # replace = TRUE/FALSE? Should sampling be done with replacement?
 sample(x=population, size=1, prob = outcomeProb, replace = T)
-## [1] &quot;TAILS&quot;</code></pre>
+## [1] &quot;HEADS&quot;</code></pre>
 </div>
 <div id="simulating-data" class="section level2">
 <h2>Simulating Data</h2>
 <p>Now, lets simulate more than one datum. We will now simulate 10 coin flips:</p>
 <pre class="r"><code># To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;HEADS&quot;
-##  [9] &quot;HEADS&quot; &quot;TAILS&quot;</code></pre>
+##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;HEADS&quot;
+##  [9] &quot;TAILS&quot; &quot;HEADS&quot;</code></pre>
 </div>
 
     </div>

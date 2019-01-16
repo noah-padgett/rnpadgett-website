@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 10 Dec 2018 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jan 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Introduction to R and Simulating Data</title>
       <link>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</link>
-      <pubDate>Mon, 10 Dec 2018 21:13:14 -0500</pubDate>
+      <pubDate>Tue, 15 Jan 2019 21:13:14 -0500</pubDate>
       
       <guid>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</guid>
       <description>Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.</description>
