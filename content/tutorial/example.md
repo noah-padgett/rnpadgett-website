@@ -1,26 +1,22 @@
 +++
-title = "Example Page"
+title = "Intro to Mixture Modeling"
 
-date = 2018-09-09T00:00:00
-# lastmod = 2018-09-09T00:00:00
+date = 2019-01-16T00:00:00
+# lastmod = 2019-01-16T00:00:00
 
-draft = false  # Is this a draft? true/false
+draft = true  # Is this a draft? true/false
 toc = true  # Show table of contents? true/false
 type = "docs"  # Do not modify.
 
 # Add menu entry to sidebar.
-linktitle = "Example Page"
+linktitle = "Mixture Models"
 [menu.tutorial]
-  parent = "Example Topic"
+  parent = "Level-2"
   weight = 1
 +++
 
-In this tutorial, I'll share my top 10 tips for getting started with Academic:
+In this tutorial, I'll start to discuss the topic of mixture modeling.
+Mixture modeling is a generalization of many statistical techniques that you may be familiar with...
+I won't dive into the math behind many of the ideas of mixture modeling
 
-## Tip 1
-
-...
-
-## Tip 2
-
-...
+Note: this is a plain markdown file and not an Rmarkdown (Rmd) file.

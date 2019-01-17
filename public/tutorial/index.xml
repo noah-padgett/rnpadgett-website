@@ -13,23 +13,22 @@
     
     
     <item>
+      <title>Intro to Mixture Modeling</title>
+      <link>/tutorial/example/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0600</pubDate>
+      
+      <guid>/tutorial/example/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll start to discuss the topic of mixture modeling. Mixture modeling is a generalization of many statistical techniques that you may be familiar with&amp;hellip; I won&amp;rsquo;t dive into the math behind many of the ideas of mixture modeling
+Note: this is a plain markdown file and not an Rmarkdown (Rmd) file.</description>
+    </item>
+    
+    <item>
       <title>Introduction to R and Simulating Data</title>
       <link>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</link>
       <pubDate>Tue, 15 Jan 2019 21:13:14 -0500</pubDate>
       
       <guid>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</guid>
       <description>Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.</description>
-    </item>
-    
-    <item>
-      <title>Example Page</title>
-      <link>/tutorial/example/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 -0500</pubDate>
-      
-      <guid>/tutorial/example/</guid>
-      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
-Tip 1 &amp;hellip;
-Tip 2 &amp;hellip;</description>
     </item>
     
   </channel>

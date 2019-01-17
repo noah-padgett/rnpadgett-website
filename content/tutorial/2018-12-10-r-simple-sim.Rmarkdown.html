@@ -75,13 +75,13 @@ outcomeProb &lt;- c(.5, .5)
 # size = number of sample 
 # replace = TRUE/FALSE? Should sampling be done with replacement?
 sample(x=population, size=1, prob = outcomeProb, replace = T)
-## [1] &quot;HEADS&quot;</code></pre>
+## [1] &quot;TAILS&quot;</code></pre>
 </div>
 <div id="simulating-data" class="section level2">
 <h2>Simulating Data</h2>
 <p>Now, lets simulate more than one datum. We will now simulate 10 coin flips:</p>
 <pre class="r"><code># To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot;
-##  [9] &quot;HEADS&quot; &quot;HEADS&quot;</code></pre>
+##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;HEADS&quot; &quot;TAILS&quot;
+##  [9] &quot;TAILS&quot; &quot;HEADS&quot;</code></pre>
 </div>

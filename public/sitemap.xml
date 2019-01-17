@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/tutorial/example/</loc>
+      <lastmod>2019-01-16T00:00:00-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/teaching/</loc>
       <lastmod>2019-01-16T00:00:00-06:00</lastmod>
     </url>
@@ -54,14 +62,6 @@
     
       <loc>/post/2018-12-07-hello/</loc>
       <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tutorial/example/</loc>
-      <lastmod>2018-09-09T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -185,7 +185,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -194,7 +194,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -257,15 +257,6 @@
     
     <url>
     
-      <loc>/tags/simulation/</loc>
-      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/categories/simulation/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -275,7 +266,7 @@
     
     <url>
     
-      <loc>/tags/teaching/</loc>
+      <loc>/tags/simulation/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -293,7 +284,7 @@
     
     <url>
     
-      <loc>/tags/tutorial/</loc>
+      <loc>/tags/teaching/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -303,6 +294,15 @@
     <url>
     
       <loc>/categories/tutorial/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorial/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
