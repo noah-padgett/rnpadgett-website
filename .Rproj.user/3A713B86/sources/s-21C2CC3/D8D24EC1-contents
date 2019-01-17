@@ -1,0 +1,78 @@
+Introduction to R
+========================================================
+author: Noah Padgett
+date: 2019-01-16
+autosize: true
+
+===
+
+## Installing R
+
+Anyways, to install R follow these steps:
+
+1. Go to https://www.r-project.org/
+2. Click on 'to download R'
+3. Choose a 'CRAN mirror', a CRAN mirror is where your computer knows to look on the internet to download the software. I suggest https://cran.revolutionanalytics.com/ which is based out of Dallas. 
+4. Select the download that is approriate for your computer.
+5. Then scroll down to the download: R-3.5.1.pkg (mac) or install for the first time (windows).
+
+These steps will help you install R, next we need to download R Studio. 
+
+===
+
+## Installing R Studio
+
+R Studio is an interface to use R that is much more friendly and easier to work with. 
+You will see this when you open both.
+
+1. Go to https://www.rstudio.com/products/rstudio/download/
+2. Scroll down to 'Installers for Supported Platforms' 
+3. Select either the windows or mac version
+
+Now that we have R and R studio downloaed, let's dive into an Intro to Simulation.
+
+===
+
+## Intro to the World of R
+
+- R is a statistical programming language.
+- The initial struggle is *OKAY*.
+- I am constantly googling how to solve errors and complete my tasks. 
+
+===
+
+## R is a fancy Calculator
+
+We want to find the sum of "1 + 1". 
+R will automatically return the result of 2.
+
+```{r}
+1 + 1
+```
+
+===
+
+## Variable Assignment
+
+```{r}
+## Assign the sum of 1 + 1 to x
+x <- 1 + 1
+## Simply place "x" to see the value stored
+x 
+```
+
+
+===
+
+## Intro to Simple Functions
+
+- One of the simplest functions in R is the "print()" function.
+
+```{r}
+## Store "Hello People" in y
+y <- "Hello People"
+## Displaythe value of y
+print(x=y) ## x is theargument of print, and we want to print y
+```
+ 
+This concept of storing values into objects to use in functions is **extremely** important. 

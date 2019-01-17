@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1547698533150.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1309953702",
+    "id" : "25260A67",
+    "lastKnownWriteTime" : 1547698675,
+    "last_content_update" : 1547698675788,
+    "path" : "C:/Users/noahp/Padgett-Website/rnpadgett-website/content/teaching/2019-01-16-intro-to-r.Rmd",
+    "project_path" : "content/teaching/2019-01-16-intro-to-r.Rmd",
+    "properties" : {
+        "cursorPosition" : "5,11",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

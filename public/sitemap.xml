@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>/teaching/</loc>
+      <lastmod>2019-01-16T00:00:00-06:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/teaching/2019-01-16-intro-to-r/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/2018-12-10-r-simple-sim.rmarkdown/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
     </url>
@@ -251,6 +267,24 @@
     <url>
     
       <loc>/categories/simulation/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/teaching/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/teaching/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>

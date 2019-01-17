@@ -273,6 +273,25 @@
         
 
         <li class="nav-item">
+          <a class="nav-link" href="/teaching/">
+            
+            <span>Teaching</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
           <a class="nav-link" href="/#contact">
             
             <span>Contact</span>
@@ -359,6 +378,9 @@
   
 
   
+  
+  <span class="middot-divider"></span>
+  <a href="/tutorial/2018-12-10-r-simple-sim.rmarkdown/#disqus_thread"></a>
   
 
   
@@ -498,8 +520,8 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 <p>Now, lets simulate more than one datum. We will now simulate 10 coin flips:</p>
 <pre class="r"><code># To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;HEADS&quot;
-##  [9] &quot;TAILS&quot; &quot;HEADS&quot;</code></pre>
+##  [1] &quot;HEADS&quot; &quot;TAILS&quot; &quot;HEADS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot; &quot;TAILS&quot;
+##  [9] &quot;HEADS&quot; &quot;HEADS&quot;</code></pre>
 </div>
 
     </div>
@@ -626,10 +648,43 @@ sample(x=population, size=10, prob = outcomeProb, replace = T)
 
     
     
-
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/teaching/2019-01-16-intro-to-r/">Introduction to R</a></li>
+        
+      </ul>
+    </div>
     
 
     
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "noahpadgett" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 
   </div>
@@ -724,6 +779,8 @@ sample(x=population, size=10, prob = outcomeProb, replace = T)
 
     
     
+    
+    <script id="dsq-count-scr" src="//noahpadgett.disqus.com/count.js" async></script>
     
 
     
