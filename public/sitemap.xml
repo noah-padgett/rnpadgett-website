@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/why-i-write/</loc>
+      <lastmod>2019-01-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/example/</loc>
       <lastmod>2019-01-16T00:00:00-06:00</lastmod>
     </url>
@@ -185,7 +193,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -194,7 +202,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -239,6 +247,33 @@
     
     <url>
     
+      <loc>/categories/work-flow/</loc>
+      <lastmod>2019-01-18T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/writing/</loc>
+      <lastmod>2019-01-18T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/grad-life/</loc>
+      <lastmod>2019-01-18T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/plot/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -257,15 +292,6 @@
     
     <url>
     
-      <loc>/categories/simulation/</loc>
-      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/simulation/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -275,7 +301,7 @@
     
     <url>
     
-      <loc>/categories/teaching/</loc>
+      <loc>/categories/simulation/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -293,7 +319,7 @@
     
     <url>
     
-      <loc>/categories/tutorial/</loc>
+      <loc>/categories/teaching/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -303,6 +329,15 @@
     <url>
     
       <loc>/tags/tutorial/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/tutorial/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
