@@ -2,7 +2,7 @@
 title: Why I Write
 author: ~
 date: '2019-03-06'
-draft: true  # Is this a draft? true/false
+draft: false  # Is this a draft? true/false
 slug: why-i-write
 categories: ['Writing', 'Work-flow', 'grad-life']
 tags: []
