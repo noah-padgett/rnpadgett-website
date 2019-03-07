@@ -60,7 +60,7 @@ enableGitInfo = false
   organizations = [ { name = "Baylor University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "Computer-Guy.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "sera-headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
   email = "noah_padgett1@baylor.edu"
@@ -99,7 +99,7 @@ enableGitInfo = false
 
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `dark`, `apogee`, `1950s`, `coffee`, `cupcake`.
-  color_theme = "coffee"
+  color_theme = "ocean"
   # Enable users to switch between day and night mode?
   day_night = true
 
@@ -257,10 +257,10 @@ enableGitInfo = false
     icon_pack = "fas"
     link = "#contact"  # For a direct email link, use "mailto:test@example.org".
 
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fab"
-    link = "https://twitter.com/rnoahpadgett"
+#  [[params.social]]
+#    icon = "twitter"
+#    icon_pack = "fab"
+#    link = "https://twitter.com/rnoahpadgett"
 
   [[params.social]]
     icon = "google-scholar"
@@ -272,6 +272,11 @@ enableGitInfo = false
     icon_pack = "fab"
     link = "https://github.com/noah-padgett"
 
+  [[params.social]]
+    icon = "researchgate"
+    icon_pack = "ai"
+    link = "https://www.researchgate.net/profile/R_Noah_Padgett"
+    
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` 
   #  and uncomment the lines below.

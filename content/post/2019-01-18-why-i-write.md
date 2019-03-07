@@ -1,7 +1,7 @@
 ---
 title: Why I Write
 author: ~
-date: '2019-01-18'
+date: '2019-03-06'
 draft: true  # Is this a draft? true/false
 slug: why-i-write
 categories: ['Writing', 'Work-flow', 'grad-life']
@@ -63,4 +63,28 @@ One way could be author name.
 Another could be date published. 
 Then one could be by subject matter.
 Each of these different methods for classifying books yields a different organization (a different classification system). 
+The classification system employed by libraries is analogous to the process that mixture modeling aims to mimic. 
 
+Despite mixture modeling being a method of classification, there is amuchmore general aspect to mixture modeling compared to library organizational systems.
+In mixture modeling, the classification is unknown at the start.
+Based on the observed data, we tried to create the system for classifying people into like groups.
+The system may not be the most optimal, but provide a set of rules that can be used to create classes of individuals based on observable characteristics. 
+
+## Beyond Developing Skills
+
+Being a skilled communicator takes practice, at least from my experience.
+The process of developing skills is by no means an easy path.
+This is why I write, to create meaningful opportunities for me to communicate topics that I am interested in. 
+In the posts and tutorials to come I will discuss topics such as 
+
+  1. Research collaborations,
+  
+  2. Working towards being part of a scholarly community,
+  
+  3. Introduction to matrix algebra,
+  
+  4. Simple linear regression through matrix operations, and
+  
+  5. Being stuck with convergence B.S. in mixture modeling.
+  
+I am not sure in what order these different topics will come above. But these will come in time. 

@@ -13,7 +13,7 @@
     <item>
       <title>Why I Write</title>
       <link>/post/why-i-write/</link>
-      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/why-i-write/</guid>
       <description>
@@ -69,8 +69,53 @@ Books could be classified in any number of ways.
 One way could be author name.
 Another could be date published.
 Then one could be by subject matter.
-Each of these different methods for classifying books yields a different organization (a different classification system).&lt;/p&gt;
+Each of these different methods for classifying books yields a different organization (a different classification system).
+The classification system employed by libraries is analogous to the process that mixture modeling aims to mimic.&lt;/p&gt;
+
+&lt;p&gt;Despite mixture modeling being a method of classification, there is amuchmore general aspect to mixture modeling compared to library organizational systems.
+In mixture modeling, the classification is unknown at the start.
+Based on the observed data, we tried to create the system for classifying people into like groups.
+The system may not be the most optimal, but provide a set of rules that can be used to create classes of individuals based on observable characteristics.&lt;/p&gt;
+
+&lt;h2 id=&#34;beyond-developing-skills&#34;&gt;Beyond Developing Skills&lt;/h2&gt;
+
+&lt;p&gt;Being a skilled communicator takes practice, at least from my experience.
+The process of developing skills is by no means an easy path.
+This is why I write, to create meaningful opportunities for me to communicate topics that I am interested in.
+In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Research collaborations,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Working towards being part of a scholarly community,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Introduction to matrix algebra,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple linear regression through matrix operations, and&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Being stuck with convergence B.S. in mixture modeling.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am not sure in what order these different topics will come above. But these will come in time.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Gut microbiome meta-analysis reveals dysbiosis is independent of body mass index in predicting risk of obesityassociated CRC</title>
+      <link>/publication/crc-meta/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/crc-meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mental health best practices in NCAA: The bidirectional relationship between mental toughness and self-compassion</title>
+      <link>/publication/ncaa-mental-health/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
+      
+      <guid>/publication/ncaa-mental-health/</guid>
+      <description></description>
     </item>
     
     <item>
