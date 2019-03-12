@@ -21,5 +21,14 @@
       <description>Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.</description>
     </item>
     
+    <item>
+      <title>Estimation of zero-inflated population mean: A bootstrapping approach</title>
+      <link>/publication/zinormal-boot/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/zinormal-boot/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
