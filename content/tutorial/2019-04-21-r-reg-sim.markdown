@@ -1,10 +1,10 @@
 ---
-title: "Simulating Data from More Complex Models"
+title: "Simulating Data from Regression Models"
 author: ~
 date: 2019-04-41T21:13:14-05:00
 categories: ["R", "simulation", "tutorial"]
 tags: ["R", "simulation", "tutorial"]
-linktitle: Simulating-Complex-Models
+linktitle: Simulating Regression Models
 menu:
   tutorial:
     parent: Level-1
