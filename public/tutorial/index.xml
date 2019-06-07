@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0400</lastBuildDate>
     
 	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Stumbling with RStan</title>
+      <link>/tutorial/2019-06-06-rstan-humble/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/2019-06-06-rstan-humble/</guid>
+      <description>So I was listing to one of my favorite podcasts (DataFramed) a few months ago and a particularly interest guest was on talking.The guest was Michael Betancourt.
+Reading about the REALLY cool HMCHMC is the shorthand for Hamiltonian Monte Carlo.
+Trouble Getting StartedThe Getting Started page (‘https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started’) is extremely thorough and gives some excellent pointerr.The page boils down to using the following R commands to get started</description>
+    </item>
     
     <item>
       <title>Simulating Data from Regression Models</title>
@@ -25,7 +36,7 @@ Simulating More Complex Models We can easily extend the basic concepts of simula
     <item>
       <title>Intro to Mixture Modeling</title>
       <link>/tutorial/example/</link>
-      <pubDate>Wed, 16 Jan 2019 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
       
       <guid>/tutorial/example/</guid>
       <description>In this tutorial, I&amp;rsquo;ll start to discuss the topic of mixture modeling. Mixture modeling is a generalization of many statistical techniques that you may be familiar with&amp;hellip; I won&amp;rsquo;t dive into the math behind many of the ideas of mixture modeling

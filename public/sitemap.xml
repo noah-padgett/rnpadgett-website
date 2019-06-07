@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/tutorial/2019-06-06-rstan-humble/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/2019-04-21-r-reg-sim/</loc>
       <lastmod>2019-04-14T00:00:00+00:00</lastmod>
     </url>
@@ -21,7 +29,7 @@
     <url>
     
       <loc>/publication/crc-meta/</loc>
-      <lastmod>2019-02-28T00:00:00-06:00</lastmod>
+      <lastmod>2019-02-28T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -29,7 +37,7 @@
     <url>
     
       <loc>/publication/ncaa-mental-health/</loc>
-      <lastmod>2019-02-28T00:00:00-06:00</lastmod>
+      <lastmod>2019-02-28T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -37,7 +45,7 @@
     <url>
     
       <loc>/tutorial/example/</loc>
-      <lastmod>2019-01-16T00:00:00-06:00</lastmod>
+      <lastmod>2019-01-16T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -45,7 +53,7 @@
     <url>
     
       <loc>/teaching/</loc>
-      <lastmod>2019-01-16T00:00:00-06:00</lastmod>
+      <lastmod>2019-01-16T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -85,7 +93,7 @@
     <url>
     
       <loc>/post/</loc>
-      <lastmod>2018-12-08T00:00:00-06:00</lastmod>
+      <lastmod>2018-12-08T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -93,7 +101,7 @@
     <url>
     
       <loc>/publication/</loc>
-      <lastmod>2018-12-08T00:00:00-06:00</lastmod>
+      <lastmod>2018-12-08T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -109,7 +117,7 @@
     <url>
     
       <loc>/tutorial/</loc>
-      <lastmod>2018-09-09T00:00:00-05:00</lastmod>
+      <lastmod>2018-09-09T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -117,7 +125,7 @@
     <url>
     
       <loc>/publication/genome-bio-lung-cancer/</loc>
-      <lastmod>2018-08-01T00:00:00-05:00</lastmod>
+      <lastmod>2018-08-01T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -125,7 +133,7 @@
     <url>
     
       <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00-05:00</lastmod>
+      <lastmod>2018-06-28T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -133,7 +141,7 @@
     <url>
     
       <loc>/publication/zinormal-boot/</loc>
-      <lastmod>2018-05-01T00:00:00-05:00</lastmod>
+      <lastmod>2018-05-01T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -141,7 +149,7 @@
     <url>
     
       <loc>/publication/casl-2-test-review/</loc>
-      <lastmod>2018-01-22T00:00:00-06:00</lastmod>
+      <lastmod>2018-01-22T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -149,7 +157,7 @@
     <url>
     
       <loc>/post/getting-started/</loc>
-      <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -165,7 +173,7 @@
     <url>
     
       <loc>/tags/academic/</loc>
-      <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -209,16 +217,7 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-15T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -227,7 +226,16 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -253,8 +261,26 @@
     
     <url>
     
+      <loc>/categories/stan/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/stan/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00-06:00</lastmod>
+      <lastmod>2018-01-13T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -263,7 +289,7 @@
     <url>
     
       <loc>/tags/test-review/</loc>
-      <lastmod>2018-01-22T00:00:00-06:00</lastmod>
+      <lastmod>2018-01-22T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -299,7 +325,7 @@
     <url>
     
       <loc>/tags/methods/</loc>
-      <lastmod>2018-05-01T00:00:00-05:00</lastmod>
+      <lastmod>2018-05-01T00:00:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -325,15 +351,6 @@
     
     <url>
     
-      <loc>/tags/simulation/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/categories/simulation/</loc>
       <lastmod>2019-04-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -343,8 +360,8 @@
     
     <url>
     
-      <loc>/tags/teaching/</loc>
-      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <loc>/tags/simulation/</loc>
+      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -361,8 +378,17 @@
     
     <url>
     
-      <loc>/tags/tutorial/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+      <loc>/tags/teaching/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/trouble/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -371,7 +397,16 @@
     <url>
     
       <loc>/categories/tutorial/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tutorial/</loc>
+      <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
