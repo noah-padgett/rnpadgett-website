@@ -60,6 +60,7 @@ Super frustrating...
 
 Anyways, it turns out that after too much time spent Googling and reading stackexchange and GitHub issues that I found how to I was able to fix this annoying startup issue.
 There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens...) and there is just a simple setting that I needed to add in order to get Stan to work.
+Here is the link to where I found the solution (https://github.com/stan-dev/rstan/issues/633)
 
 Here is how I fixed the issue through R:
 

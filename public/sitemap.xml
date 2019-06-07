@@ -225,7 +225,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -234,7 +234,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -261,7 +261,7 @@
     
     <url>
     
-      <loc>/categories/stan/</loc>
+      <loc>/tags/stan/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -270,7 +270,7 @@
     
     <url>
     
-      <loc>/tags/stan/</loc>
+      <loc>/categories/stan/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -351,15 +351,6 @@
     
     <url>
     
-      <loc>/categories/simulation/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/simulation/</loc>
       <lastmod>2019-04-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -369,8 +360,8 @@
     
     <url>
     
-      <loc>/categories/teaching/</loc>
-      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <loc>/categories/simulation/</loc>
+      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -379,6 +370,15 @@
     <url>
     
       <loc>/tags/teaching/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/teaching/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -396,7 +396,7 @@
     
     <url>
     
-      <loc>/categories/tutorial/</loc>
+      <loc>/tags/tutorial/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -405,7 +405,7 @@
     
     <url>
     
-      <loc>/tags/tutorial/</loc>
+      <loc>/categories/tutorial/</loc>
       <lastmod>2019-06-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

@@ -57,7 +57,8 @@ Error in sink(type = “output”) : invalid connection&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Super frustrating…&lt;/p&gt;
 &lt;p&gt;Anyways, it turns out that after too much time spent Googling and reading stackexchange and GitHub issues that I found how to I was able to fix this annoying startup issue.
-There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens…) and there is just a simple setting that I needed to add in order to get Stan to work.&lt;/p&gt;
+There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens…) and there is just a simple setting that I needed to add in order to get Stan to work.
+Here is the link to where I found the solution (&lt;a href=&#34;https://github.com/stan-dev/rstan/issues/633&#34; class=&#34;uri&#34;&gt;https://github.com/stan-dev/rstan/issues/633&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Here is how I fixed the issue through R:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Uninstall rstan so that I can reinstall it properly&lt;/li&gt;
