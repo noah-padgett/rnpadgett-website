@@ -6,14 +6,14 @@
     <description>Recent content in Padgett: Beyond-STAT on Padgett: Beyond-STAT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Stumbling with RStan</title>
       <link>/tutorial/2019-06-06-rstan-humble/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2019-06-06-rstan-humble/</guid>
       <description>
@@ -46,15 +46,7 @@ fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&l
 Super simple…&lt;/p&gt;
 &lt;p&gt;Or NOT…&lt;/p&gt;
 &lt;p&gt;I kept getting the following error through back at me.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Error in compileCode(f, code, language = language, verbose = verbose) :
-Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found
-make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127
-In addition: Warning message:
-In system(cmd, intern = !verbose) :
-running command ‘C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2&amp;gt; file197870bf1a48.cpp.err.txt’ had status 1
-Error in sink(type = “output”) : invalid connection&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;Error in compileCode(f, code, language = language, verbose = verbose) :    Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127 In addition: Warning message: In system(cmd, intern = !verbose) :   running command &#39;C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2&amp;gt; file197870bf1a48.cpp.err.txt&#39; had status 1 Error in sink(type = &#34;output&#34;) : invalid connection&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Super frustrating…&lt;/p&gt;
 &lt;p&gt;Anyways, it turns out that after too much time spent Googling and reading stackexchange and GitHub issues that I found how to I was able to fix this annoying startup issue.
 There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens…) and there is just a simple setting that I needed to add in order to get Stan to work.
@@ -97,6 +89,25 @@ schools_dat &amp;lt;- list(J = 8,
 fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Note: I need to come back and edit this content…&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An examination of sensitivity to measurement error of Rasch residual-based fit statistics</title>
+      <link>/publication/rasch-fit/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/rasch-fit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploration of the vaginal and gut microbiome in African American women by body mass index, class of obesity, and gestational weight gain: A pilot study</title>
+      <link>/publication/microbiome-gestational-weight-pilot/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/publication/microbiome-gestational-weight-pilot/</guid>
+      <description>&lt;p&gt;In this project, I contributed to the statistical analyses and making of figures.&lt;/p&gt;
 </description>
     </item>
     
@@ -2706,7 +2717,7 @@ In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
     <item>
       <title>Gut microbiome meta-analysis reveals dysbiosis is independent of body mass index in predicting risk of obesityassociated CRC</title>
       <link>/publication/crc-meta/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
       
       <guid>/publication/crc-meta/</guid>
       <description></description>
@@ -2715,7 +2726,7 @@ In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
     <item>
       <title>Mental health best practices in NCAA: The bidirectional relationship between mental toughness and self-compassion</title>
       <link>/publication/ncaa-mental-health/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
       
       <guid>/publication/ncaa-mental-health/</guid>
       <description></description>
@@ -2724,7 +2735,7 @@ In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
     <item>
       <title>Intro to Mixture Modeling</title>
       <link>/tutorial/example/</link>
-      <pubDate>Wed, 16 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 -0600</pubDate>
       
       <guid>/tutorial/example/</guid>
       <description>&lt;p&gt;In this tutorial, I&amp;rsquo;ll start to discuss the topic of mixture modeling.
@@ -2744,7 +2755,11 @@ I won&amp;rsquo;t dive into the math behind many of the ideas of mixture modelin
       <description>
 
 
-&lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.&lt;/p&gt;
+&lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers.
+R is an open source and free statistical programming language.
+R utilizes user built ‘packages.’
+The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated.
+We will talk about packages a lot over the never few years so this is kind of tertiary.&lt;/p&gt;
 &lt;p&gt;Anyways, to install R follow these steps:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://www.r-project.org/&#34; class=&#34;uri&#34;&gt;https://www.r-project.org/&lt;/a&gt;&lt;/li&gt;
@@ -2753,7 +2768,9 @@ I won&amp;rsquo;t dive into the math behind many of the ideas of mixture modelin
 &lt;li&gt;Select the download that is approriate for your computer.&lt;/li&gt;
 &lt;li&gt;Then scroll down to the download: R-3.5.1.pkg (mac) or install for the first time (windows).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;These steps will help you install R, next we need to download R Studio. R Studio is an interface to use R that is much more friendly and easier to work with. You will see this when you open both.&lt;/p&gt;
+&lt;p&gt;These steps will help you install R, next we need to download R Studio.
+R Studio is an interface to use R that is much more friendly and easier to work with.
+You will see this when you open both.&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Scroll down to ‘Installers for Supported Platforms’&lt;/li&gt;
@@ -2762,11 +2779,25 @@ I won&amp;rsquo;t dive into the math behind many of the ideas of mixture modelin
 &lt;p&gt;Now that we have R and R studio downloaed, let’s dive into an Intro to Simulation.&lt;/p&gt;
 &lt;div id=&#34;intro-to-the-world-of-r&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Intro to the World of R&lt;/h2&gt;
-&lt;p&gt;R is a statistical programming language. Because R is a programming language there is a feel of technicality involved with using the software. One of the major difficulties I have found with helping others get started with R is getting over the initial struggle. The initial struggle is &lt;em&gt;OKAY&lt;/em&gt;. I use R nearly everyday and I am constantly googling how to solve errors and complete my tasks. Basically, I want to convey that it’s perfectly normal to constantly get error messages and then ask the world of google how to fix your error.&lt;/p&gt;
-&lt;p&gt;So, for starters, R can be broken down to being a fancy calculator. For example, below is a simple case for using R as simple calculator. We want to find the sum of “1 + 1”. R will automatically return the result of 2.&lt;/p&gt;
+&lt;p&gt;R is a statistical programming language.
+Because R is a programming language there is a feel of technicality involved with using the software.
+One of the major difficulties I have found with helping others get started with R is getting over the initial struggle.
+The initial struggle is &lt;em&gt;OKAY&lt;/em&gt;.
+I use R nearly everyday and I am constantly googling how to solve errors and complete my tasks.
+Basically, I want to convey that it’s perfectly normal to constantly get error messages and then ask the world of google how to fix your error.&lt;/p&gt;
+&lt;p&gt;So, for starters, R can be broken down to being a fancy calculator.
+For example, below is a simple case for using R as simple calculator.
+We want to find the sum of “1 + 1”.
+R will automatically return the result of 2.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;1 + 1
 ## [1] 2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, this is a little boring. One of the major advantages of using a programming language is being able to store different operations into what is called an object. An object within R is simply a letter or word that represent another symbol or value. For example, we can store the summation of “1 + 1” into a single letter “x”. R does this assignment of values to words or letters through two different mechanisms. You can use “=” or “&amp;lt;-” to make R assign values to objects/letters. However, within R it is customary to only use “&amp;lt;-” for basic assignment while the “=” is reserved for arguments within functions (I will get to this in a moment).&lt;/p&gt;
+&lt;p&gt;Now, this is a little boring.
+One of the major advantages of using a programming language is being able to store different operations into what is called an object.
+An object within R is simply a letter or word that represent another symbol or value.
+For example, we can store the summation of “1 + 1” into a single letter “x”.
+R does this assignment of values to words or letters through two different mechanisms.
+You can use “=” or “&amp;lt;-” to make R assign values to objects/letters.
+However, within R it is customary to only use “&amp;lt;-” for basic assignment while the “=” is reserved for arguments within functions (I will get to this in a moment).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## Assign the sum of 1 + 1 to x
 x &amp;lt;- 1 + 1
 ## Simply place &amp;quot;x&amp;quot; to see the value stored
@@ -2774,13 +2805,22 @@ x
 ## [1] 2&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;intro-to-simple-functions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Intro to Simple Functions&lt;/h3&gt;
-&lt;p&gt;R is a functional programming language, which means that R is designed with tools that take in values to return a result. Now, this is super vague and not explicit enough to make sense. One of the simplest functions in R is the “print()” function. The print function takes in a single argument “x”. This means that based on the value supplied to the function print with the argument x, R will display the actual value(s) stored in x. For example, suppose we store the phrase “Hello People” in the object “y”. We can use the print() function to see what the value of “y” is when supplied to the functin.&lt;/p&gt;
+&lt;p&gt;R is a functional programming language, which means that R is designed with tools that take in values to return a result.
+Now, this is super vague and not explicit enough to make sense.
+One of the simplest functions in R is the “print()” function.
+The print function takes in a single argument “x”.
+This means that based on the value supplied to the function print with the argument x, R will display the actual value(s) stored in x.
+For example, suppose we store the phrase “Hello People” in the object “y”.
+We can use the print() function to see what the value of “y” is when supplied to the functin.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## Store &amp;quot;Hello People&amp;quot; in y
 y &amp;lt;- &amp;quot;Hello People&amp;quot;
 ## Displaythe value of y
 print(x=y) ## x is theargument of print, and we want to print y
 ## [1] &amp;quot;Hello People&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This concept of storing values into objects to use in functions is &lt;strong&gt;extremely&lt;/strong&gt; important. We can utilize this idea in any number of ways we can imagine. The flexibility to choose how we use the simple rules of R provides us with a basis for manipulating data and doing more complex statistical analyses. But, for now I will talk a little bit about how R can be used to generate values randomly.&lt;/p&gt;
+&lt;p&gt;This concept of storing values into objects to use in functions is &lt;strong&gt;extremely&lt;/strong&gt; important.
+We can utilize this idea in any number of ways we can imagine.
+The flexibility to choose how we use the simple rules of R provides us with a basis for manipulating data and doing more complex statistical analyses.
+But, for now I will talk a little bit about how R can be used to generate values randomly.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
@@ -2795,7 +2835,11 @@ print(x=y) ## x is theargument of print, and we want to print y
       <description>
 
 
-&lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers. R is an open source and free statistical programming language. R utilizes user built ‘packages.’ The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated. We will talk about packages a lot over the never few years so this is kind of tertiary.&lt;/p&gt;
+&lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers.
+R is an open source and free statistical programming language.
+R utilizes user built ‘packages.’
+The package library is huge and you can find a package that does nearly anything you need it to and a large number of these are regularly updated.
+We will talk about packages a lot over the never few years so this is kind of tertiary.&lt;/p&gt;
 &lt;p&gt;Anyways, to install R follow these steps:&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://www.r-project.org/&#34; class=&#34;uri&#34;&gt;https://www.r-project.org/&lt;/a&gt;&lt;/li&gt;
@@ -2804,7 +2848,9 @@ print(x=y) ## x is theargument of print, and we want to print y
 &lt;li&gt;Select the download that is approriate for your computer.&lt;/li&gt;
 &lt;li&gt;Then scroll down to the download: R-3.5.1.pkg (mac) or install for the first time (windows).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;These steps will help you install R, next we need to download R Studio. R Studio is an interface to use R that is much more friendly and easier to work with. You will see this when you open both.&lt;/p&gt;
+&lt;p&gt;These steps will help you install R, next we need to download R Studio.
+R Studio is an interface to use R that is much more friendly and easier to work with.
+You will see this when you open both.&lt;/p&gt;
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;Go to &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34; class=&#34;uri&#34;&gt;https://www.rstudio.com/products/rstudio/download/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Scroll down to ‘Installers for Supported Platforms’&lt;/li&gt;
@@ -2813,11 +2859,25 @@ print(x=y) ## x is theargument of print, and we want to print y
 &lt;p&gt;Now that we have R and R studio downloaed, let’s dive into an Intro to Simulation.&lt;/p&gt;
 &lt;div id=&#34;intro-to-the-world-of-r&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Intro to the World of R&lt;/h2&gt;
-&lt;p&gt;R is a statistical programming language. Because R is a programming language there is a feel of technicality involved with using the software. One of the major difficulties I have found with helping others get started with R is getting over the initial struggle. The initial struggle is &lt;em&gt;OKAY&lt;/em&gt;. I use R nearly everyday and I am constantly googling how to solve errors and complete my tasks. Basically, I want to convey that it’s perfectly normal to constantly get error messages and then ask the world of google how to fix your error.&lt;/p&gt;
-&lt;p&gt;So, for starters, R can be broken down to being a fancy calculator. For example, below is a simple case for using R as simple calculator. We want to find the sum of “1 + 1”. R will automatically return the result of 2.&lt;/p&gt;
+&lt;p&gt;R is a statistical programming language.
+Because R is a programming language there is a feel of technicality involved with using the software.
+One of the major difficulties I have found with helping others get started with R is getting over the initial struggle.
+The initial struggle is &lt;em&gt;OKAY&lt;/em&gt;.
+I use R nearly everyday and I am constantly googling how to solve errors and complete my tasks.
+Basically, I want to convey that it’s perfectly normal to constantly get error messages and then ask the world of google how to fix your error.&lt;/p&gt;
+&lt;p&gt;So, for starters, R can be broken down to being a fancy calculator.
+For example, below is a simple case for using R as simple calculator.
+We want to find the sum of “1 + 1”.
+R will automatically return the result of 2.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;1 + 1
 ## [1] 2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, this is a little boring. One of the major advantages of using a programming language is being able to store different operations into what is called an object. An object within R is simply a letter or word that represent another symbol or value. For example, we can store the summation of “1 + 1” into a single letter “x”. R does this assignment of values to words or letters through two different mechanisms. You can use “=” or “&amp;lt;-” to make R assign values to objects/letters. However, within R it is customary to only use “&amp;lt;-” for basic assignment while the “=” is reserved for arguments within functions (I will get to this in a moment).&lt;/p&gt;
+&lt;p&gt;Now, this is a little boring.
+One of the major advantages of using a programming language is being able to store different operations into what is called an object.
+An object within R is simply a letter or word that represent another symbol or value.
+For example, we can store the summation of “1 + 1” into a single letter “x”.
+R does this assignment of values to words or letters through two different mechanisms.
+You can use “=” or “&amp;lt;-” to make R assign values to objects/letters.
+However, within R it is customary to only use “&amp;lt;-” for basic assignment while the “=” is reserved for arguments within functions (I will get to this in a moment).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## Assign the sum of 1 + 1 to x
 x &amp;lt;- 1 + 1
 ## Simply place &amp;quot;x&amp;quot; to see the value stored
@@ -2825,25 +2885,50 @@ x
 ## [1] 2&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;intro-to-simple-functions&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Intro to Simple Functions&lt;/h3&gt;
-&lt;p&gt;R is a functional programming language, which means that R is designed with tools that take in values to return a result. Now, this is super vague and not explicit enough to make sense. One of the simplest functions in R is the “print()” function. The print function takes in a single argument “x”. This means that based on the value supplied to the function print with the argument x, R will display the actual value(s) stored in x. For example, suppose we store the phrase “Hello People” in the object “y”. We can use the print() function to see what the value of “y” is when supplied to the functin.&lt;/p&gt;
+&lt;p&gt;R is a functional programming language, which means that R is designed with tools that take in values to return a result.
+Now, this is super vague and not explicit enough to make sense.
+One of the simplest functions in R is the “print()” function.
+The print function takes in a single argument “x”.
+This means that based on the value supplied to the function print with the argument x, R will display the actual value(s) stored in x.
+For example, suppose we store the phrase “Hello People” in the object “y”.
+We can use the print() function to see what the value of “y” is when supplied to the functin.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## Store &amp;quot;Hello People&amp;quot; in y
 y &amp;lt;- &amp;quot;Hello People&amp;quot;
 ## Displaythe value of y
 print(x=y) ## x is theargument of print, and we want to print y
 ## [1] &amp;quot;Hello People&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This concept of storing values into objects to use in functions is &lt;strong&gt;extremely&lt;/strong&gt; important. We can utilize this idea in any number of ways we can imagine. The flexibility to choose how we use the simple rules of R provides us with a basis for manipulating data and doing more complex statistical analyses. But, for now I will talk a little bit about how R can be used to generate values randomly.&lt;/p&gt;
+&lt;p&gt;This concept of storing values into objects to use in functions is &lt;strong&gt;extremely&lt;/strong&gt; important.
+We can utilize this idea in any number of ways we can imagine.
+The flexibility to choose how we use the simple rules of R provides us with a basis for manipulating data and doing more complex statistical analyses.
+But, for now I will talk a little bit about how R can be used to generate values randomly.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;brief-introduction-to-probability&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;em&gt;Brief&lt;/em&gt; Introduction to Probability&lt;/h2&gt;
-&lt;p&gt;Yes, we are starting with probability. Before we can talk about simulating random data, we need to talk briefly about probability.&lt;/p&gt;
-&lt;p&gt;Let’s say we have a quarter. A quarter has two sides, HEADS and TAILS. These two outcomes are possibly if we flip a coin once. A coin is called ‘fair’ if both sides have the same likelihood of occuring. This means that over repeated flips of our coin, we would expect that each outcome (H vs. T) to occur approximately the same number of times. Therefore, if a coin is fair, each outcome H and T will occur 50% of the time. In other words, each outcome has a 0.5 probability of occuring.&lt;/p&gt;
+&lt;p&gt;Yes, we are starting with probability.
+Before we can talk about simulating random data, we need to talk briefly about probability.&lt;/p&gt;
+&lt;p&gt;Let’s say we have a quarter.
+A quarter has two sides, HEADS and TAILS.
+These two outcomes are possibly if we flip a coin once.
+A coin is called ‘fair’ if both sides have the same likelihood of occuring.
+This means that over repeated flips of our coin, we would expect that each outcome (H vs. T) to occur approximately the same number of times.
+Therefore, if a coin is fair, each outcome H and T will occur 50% of the time.
+In other words, each outcome has a 0.5 probability of occuring.&lt;/p&gt;
 &lt;p&gt;This is definition note: a probability is strictly between 0 and 1. If a probability if said to be outside this range, then the value cannot be a probability.&lt;/p&gt;
-&lt;p&gt;Probability is based on taking a &lt;em&gt;sample&lt;/em&gt; from a &lt;em&gt;population&lt;/em&gt;. A population is what is often of interest, but we rarely have access to the entire population. The US census is an attempt to get information from the entire US population. Because of cost and time, we take sufficiently large samples from a population to gain insight into the population. For example, to empirically test whether a coin is fair, we need to flip a coin many times generate the number of the times each outcomes occurs. If we flip a coin 1000 times and 500 of these turned out to fair, we likely have good evidence that our coin is fair. In contrast, if we flipped a coin 3 times and all 3 turned out to heads then the question becomes whether or not we ahve enough evidence to conclude that the coin is &lt;em&gt;not&lt;/em&gt; fair.&lt;/p&gt;
+&lt;p&gt;Probability is based on taking a &lt;em&gt;sample&lt;/em&gt; from a &lt;em&gt;population&lt;/em&gt;.
+A population is what is often of interest, but we rarely have access to the entire population.
+The US census is an attempt to get information from the entire US population.
+Because of cost and time, we take sufficiently large samples from a population to gain insight into the population.
+For example, to empirically test whether a coin is fair, we need to flip a coin many times generate the number of the times each outcomes occurs.
+If we flip a coin 1000 times and 500 of these turned out to fair, we likely have good evidence that our coin is fair.
+In contrast, if we flipped a coin 3 times and all 3 turned out to heads then the question becomes whether or not we ahve enough evidence to conclude that the coin is &lt;em&gt;not&lt;/em&gt; fair.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;simulating-a-datum&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Simulating a Datum&lt;/h2&gt;
-&lt;p&gt;In R, we can generate a single sample from a population very easily. Take the example of a coin flip. We can specify a population with two outcomes Heads and Tails with each outcome begin equally likely. From this population, we then take a single draw to obtain a datum.&lt;/p&gt;
+&lt;p&gt;In R, we can generate a single sample from a population very easily.
+Take the example of a coin flip.
+We can specify a population with two outcomes Heads and Tails with each outcome begin equally likely.
+From this population, we then take a single draw to obtain a datum.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
 # Specify the possible outcomes. We do this by telling R to make an object with two values inside. This is done by using the command  c(.). Values within the () are stuck together
 population &amp;lt;- c(&amp;#39;HEADS&amp;#39;, &amp;#39;TAILS&amp;#39;)
@@ -2863,7 +2948,7 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 &lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
+##  [1] &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
 ##  [9] &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
@@ -2966,7 +3051,7 @@ Also, this where many of my trial-and-error attempts are also given and maybe th
     <item>
       <title>Interaction between the microbiome and TP53 in human lung cancer</title>
       <link>/publication/genome-bio-lung-cancer/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0500</pubDate>
       
       <guid>/publication/genome-bio-lung-cancer/</guid>
       <description>&lt;p&gt;In this project, I contributed to the statistical analyses and making of figures.&lt;/p&gt;
@@ -2976,29 +3061,11 @@ Also, this where many of my trial-and-error attempts are also given and maybe th
     <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0500</pubDate>
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Estimation of zero-inflated population mean: A bootstrapping approach</title>
-      <link>/publication/zinormal-boot/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
-      
-      <guid>/publication/zinormal-boot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test Review: Comprehensive Assessment of Spoken Language–Second Edition</title>
-      <link>/publication/casl-2-test-review/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 -0500</pubDate>
-      
-      <guid>/publication/casl-2-test-review/</guid>
-      <description></description>
     </item>
     
   </channel>

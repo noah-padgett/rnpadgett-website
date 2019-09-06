@@ -6,8 +6,8 @@
     <description>Recent content in Stan on Padgett: Beyond-STAT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/stan/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Stumbling with RStan</title>
       <link>/tutorial/2019-06-06-rstan-humble/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/2019-06-06-rstan-humble/</guid>
       <description>So I was listing to one of my favorite podcasts (DataFramed) a few months ago and a particularly interest guest was on talking.The guest was Michael Betancourt.

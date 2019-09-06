@@ -13,7 +13,7 @@ title = "Padgett: Beyond-STAT"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; 2019"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -53,11 +53,11 @@ enableGitInfo = false
 
   # Your details.
   name = "R. Noah Padgett"
-  role = "Graduate Student of Educational Psychology"
+  role = "PhD Student of Educational Psychology"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Baylor University", url = "" } ]
+  organizations = [ { name = "Baylor University", url = "https://www.baylor.edu" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "sera-headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
@@ -354,10 +354,10 @@ enableGitInfo = false
     show_logo = false
 
 # Taxonomies.
-#[taxonomies]
-#  tag = "tags"
-#  category = "categories"
-#  publication_type = "publication_types"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
 
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.

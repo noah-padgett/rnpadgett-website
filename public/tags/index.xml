@@ -6,8 +6,8 @@
     <description>Recent content in Tags on Padgett: Beyond-STAT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,16 +15,34 @@
     <item>
       <title>Academic</title>
       <link>/tags/academic/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>/tags/academic/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>INFIT MNSQ</title>
+      <link>/tags/infit-mnsq/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/tags/infit-mnsq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OUTFIT MNSQ</title>
+      <link>/tags/outfit-mnsq/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/tags/outfit-mnsq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -40,9 +58,18 @@
     </item>
     
     <item>
+      <title>Rasch measurement</title>
+      <link>/tags/rasch-measurement/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/tags/rasch-measurement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Stan</title>
       <link>/tags/stan/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/stan/</guid>
       <description></description>
@@ -51,18 +78,36 @@
     <item>
       <title>Test Review</title>
       <link>/tags/test-review/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 -0600</pubDate>
       
       <guid>/tags/test-review/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>measurement error</title>
+      <link>/tags/measurement-error/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/tags/measurement-error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>methods</title>
       <link>/tags/methods/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0500</pubDate>
       
       <guid>/tags/methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>partial credit model</title>
+      <link>/tags/partial-credit-model/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/tags/partial-credit-model/</guid>
       <description></description>
     </item>
     
@@ -105,7 +150,7 @@
     <item>
       <title>trouble</title>
       <link>/tags/trouble/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/trouble/</guid>
       <description></description>
@@ -114,7 +159,7 @@
     <item>
       <title>tutorial</title>
       <link>/tags/tutorial/</link>
-      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/tutorial/</guid>
       <description></description>

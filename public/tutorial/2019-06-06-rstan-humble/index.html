@@ -127,9 +127,9 @@ Reading about the REALLY cool HMCHMC is the shorthand for Hamiltonian Monte Car
 Trouble Getting StartedThe Getting Started page (‘https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started’) is extremely thorough and gives some excellent pointerr.The page boils down to using the following R commands to get started"><meta property="og:image" content="/img/sera-headshot.jpg">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-06-06T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2019-09-06T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2019-06-06T00:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2019-09-06T00:00:00&#43;00:00">
   
 
   
@@ -370,9 +370,9 @@ Reading about the REALLY cool HMCHMC is the shorthand for Hamiltonian Monte Car
 
   <span class="article-date">
     
-    <meta content="2019-06-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2019-06-06 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Jun 6, 2019
+    <meta content="2019-09-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-09-06 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Sep 6, 2019
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -483,15 +483,7 @@ fit &lt;- stan(file = &#39;8schools.stan&#39;, data = schools_dat)</code></pre>
 Super simple…</p>
 <p>Or NOT…</p>
 <p>I kept getting the following error through back at me.</p>
-<blockquote>
-<p>Error in compileCode(f, code, language = language, verbose = verbose) :
-Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found
-make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127
-In addition: Warning message:
-In system(cmd, intern = !verbose) :
-running command ‘C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2&gt; file197870bf1a48.cpp.err.txt’ had status 1
-Error in sink(type = “output”) : invalid connection</p>
-</blockquote>
+<p><code>Error in compileCode(f, code, language = language, verbose = verbose) :    Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127 In addition: Warning message: In system(cmd, intern = !verbose) :   running command 'C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2&gt; file197870bf1a48.cpp.err.txt' had status 1 Error in sink(type = "output") : invalid connection</code></p>
 <p>Super frustrating…</p>
 <p>Anyways, it turns out that after too much time spent Googling and reading stackexchange and GitHub issues that I found how to I was able to fix this annoying startup issue.
 There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens…) and there is just a simple setting that I needed to add in order to get Stan to work.
@@ -567,7 +559,7 @@ fit &lt;- stan(file = &#39;8schools.stan&#39;, data = schools_dat)</code></pre>
   
   <div class="media-body">
     <h5 class="card-title" itemprop="name"><a href="/">R. Noah Padgett</a></h5>
-    <h6 class="card-subtitle">Graduate Student of Educational Psychology</h6>
+    <h6 class="card-subtitle">PhD Student of Educational Psychology</h6>
     
     <ul class="network-icon" aria-hidden="true">
       
@@ -714,7 +706,7 @@ fit &lt;- stan(file = &#39;8schools.stan&#39;, data = schools_dat)</code></pre>
   
 
   <p class="powered-by">
-    &copy; 2018 &middot; 
+    &copy; 2019 &middot; 
 
     Powered by the
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

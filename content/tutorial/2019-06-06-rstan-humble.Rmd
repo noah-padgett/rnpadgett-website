@@ -1,7 +1,7 @@
 ---
 title: "Stumbling with RStan"
 author: ~
-date: 2019-06-06
+date: 2019-09-06
 categories: ["R", "Stan", "tutorial"]
 tags: ["R", "Stan", "trouble", "tutorial"]
 linktitle: Stumbling with RStan
@@ -48,13 +48,13 @@ Or NOT...
 
 I kept getting the following error through back at me.
 
-> Error in compileCode(f, code, language = language, verbose = verbose) : 
+`Error in compileCode(f, code, language = language, verbose = verbose) : 
   Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found
 make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127
 In addition: Warning message:
 In system(cmd, intern = !verbose) :
   running command 'C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2> file197870bf1a48.cpp.err.txt' had status 1
-Error in sink(type = "output") : invalid connection
+Error in sink(type = "output") : invalid connection`
 
 Super frustrating...
 
