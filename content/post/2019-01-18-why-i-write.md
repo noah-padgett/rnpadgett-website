@@ -9,6 +9,11 @@ tags: []
 image:
   caption: ''
   focal_point: ''
+linktitle: Why I Write
+menu:
+  post:
+    parent: Posts
+    weight: 1
 ---
 
 Recently, I have begun writing more and more.

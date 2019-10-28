@@ -8,6 +8,11 @@ tags: []
 image:
   caption: ''
   focal_point: ''
+linktitle: Reporting GMM
+menu:
+  post:
+    parent: Posts
+    weight: 2
 ---
 
 I am currently wrapping up my work on a project investigating the alcoholic tendencies of adolesences.

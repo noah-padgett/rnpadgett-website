@@ -3375,15 +3375,6 @@ sample(x=population, size=10, prob = outcomeProb, replace = T)
     </item>
     
     <item>
-      <title>Post</title>
-      <link>/post/</link>
-      <pubDate>Mon, 17 Dec 2018 10:35:45 -0600</pubDate>
-      
-      <guid>/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Reporting Growth Mixture Models</title>
       <link>/post/2018-12-17-gmm-reporting/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
@@ -3475,6 +3466,16 @@ Also, this where many of my trial-and-error attempts are also given and maybe th
       
       <guid>/publication/genome-bio-lung-cancer/</guid>
       <description>&lt;p&gt;In this project, I contributed to the statistical analyses and making of figures.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     

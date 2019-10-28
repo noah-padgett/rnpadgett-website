@@ -2,14 +2,14 @@
 title = "Posts"
 date = 2018-12-08T00:00:00
 
-# List format.
-#   0 = Simple
-#   1 = Detailed
-#   2 = Stream
-list_format = 2
+draft = false  # Is this a draft? true/false
+toc = true  # Show table of contents? true/false
+type = "docs"  # Do not modify.
 
-# Optional featured image (relative to `static/img/` folder).
-#[header]
-#image = ""
-#caption = ""
+# Add menu entry to sidebar.
+[menu.tutorial]
+  name = "Posts"
+  weight = 1
 +++
+
+In this folder, I my different blog posts can be accessed on the left.

@@ -4,7 +4,13 @@ author: "Frida Gomam"
 date: 2015-07-23T21:13:14-05:00
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
+linktitle: Hello R Markdown
+menu:
+  post:
+    parent: Posts
+    weight: 4
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
