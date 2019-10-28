@@ -10,17 +10,22 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Educational Measurement",
     "Structural Equation Modeling",
     "Multilevel Modeling",
-    "Complex Sampling Designs"
+    "Complex Sampling Designs",
+    "Educational Measurement"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "MA/PhD in Educational Psychology"
+  course = "PhD in Educational Psychology"
   institution = "Baylor University"
-
+  
+[[education.courses]]
+  course = "MA in Educational Psychology"
+  institution = "Baylor University"
+  year = 2019
+  
 [[education.courses]]
   course = "BSc in Statistics and Psychology"
   institution = "University of Wisconsin - Whitewater"

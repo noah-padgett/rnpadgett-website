@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Sun, 27 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CFA</title>
+      <link>/categories/cfa/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/cfa/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GMM</title>
@@ -41,7 +51,7 @@
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
       <description></description>
@@ -84,11 +94,47 @@
     </item>
     
     <item>
+      <title>code</title>
+      <link>/categories/code/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>factor-analysis</title>
+      <link>/categories/factor-analysis/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/factor-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>grad-life</title>
       <link>/categories/grad-life/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/grad-life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lavaan</title>
+      <link>/categories/lavaan/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/lavaan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproduce</title>
+      <link>/categories/reproduce/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/reproduce/</guid>
       <description></description>
     </item>
     
@@ -113,7 +159,7 @@
     <item>
       <title>tutorial</title>
       <link>/categories/tutorial/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/tutorial/</guid>
       <description></description>

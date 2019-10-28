@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/tutorial/2019-10-27-lavaan-cfa-reproduction/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tutorial/2019-06-06-rstan-humble/</loc>
       <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     </url>
@@ -215,7 +223,26 @@
     
     <url>
     
+      <loc>/categories/cfa/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/cfa/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -286,8 +313,8 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
-      <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+      <loc>/categories/r/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -295,8 +322,8 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -331,7 +358,7 @@
     
     <url>
     
-      <loc>/tags/stan/</loc>
+      <loc>/categories/stan/</loc>
       <lastmod>2019-09-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -340,7 +367,7 @@
     
     <url>
     
-      <loc>/categories/stan/</loc>
+      <loc>/tags/stan/</loc>
       <lastmod>2019-09-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -385,8 +412,53 @@
     
     <url>
     
+      <loc>/categories/code/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/code/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/factor-analysis/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/categories/grad-life/</loc>
       <lastmod>2019-03-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/lavaan/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/lavaan/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -439,8 +511,17 @@
     
     <url>
     
-      <loc>/tags/simulation/</loc>
-      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
+      <loc>/categories/reproduce/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/reproduce/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -457,8 +538,8 @@
     
     <url>
     
-      <loc>/tags/teaching/</loc>
-      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <loc>/tags/simulation/</loc>
+      <lastmod>2019-04-14T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -467,6 +548,15 @@
     <url>
     
       <loc>/categories/teaching/</loc>
+      <lastmod>2019-01-15T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/teaching/</loc>
       <lastmod>2019-01-15T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
@@ -484,8 +574,8 @@
     
     <url>
     
-      <loc>/tags/tutorial/</loc>
-      <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+      <loc>/categories/tutorial/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -493,8 +583,8 @@
     
     <url>
     
-      <loc>/categories/tutorial/</loc>
-      <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+      <loc>/tags/tutorial/</loc>
+      <lastmod>2019-10-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
