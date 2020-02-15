@@ -2493,6 +2493,9 @@ findPower(act.pwr.n, iv=&amp;quot;N&amp;quot;, power=0.8)
       <guid>/tutorials/2018-12-10-r-simple-sim.rmarkdown/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers.
 R is an open source and free statistical programming language.
@@ -2607,8 +2610,8 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 &lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot;
-## [10] &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
+## [10] &amp;quot;HEADS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>

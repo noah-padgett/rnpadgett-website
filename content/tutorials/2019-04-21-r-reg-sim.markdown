@@ -1,14 +1,15 @@
 ---
 title: "Simulating Data from Regression Models"
-author: ~
+linktitle: Simulating Regression Models
 date: 2019-04-14
+type: docs
 reading_time: true
 categories: ["R", "simulation", "tutorial"]
 tags: ["R", "simulation", "tutorial"]
-linktitle: Simulating Regression Models
+
 menu:
   tutorial:
-    parent: Level-1
+    parent: General
     weight: 2
 ---
 

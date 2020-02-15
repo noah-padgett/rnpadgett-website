@@ -3,23 +3,83 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/example1/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <loc>/courses/edp-6362/example1/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <loc>/courses/edp-6362/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/example/example2/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <loc>/courses/edp-6362/example2/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/padgett-r.-n.-morgan-g.-b./</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/categorical/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mlcfa/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/model-fit/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/multilevel/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/padgett2020a/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/roc-analysis/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-08T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/3/</loc>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
@@ -28,12 +88,22 @@
   </url>
   
   <url>
-    <loc>/tags/measurement/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <loc>/tags/rasch/</loc>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/tags/software-review/</loc>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/padgett2020b/</loc>
+    <lastmod>2020-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/measurement/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
@@ -48,62 +118,42 @@
   </url>
   
   <url>
-    <loc>/tags/rasch/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/talk/example/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/publication/papadakis2020/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/obesity/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/papadakis-z.-padgett-r.-n.-stamatis-a.-karasch-r./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/mckay-m.-andretta-j.-padgett-r.-n.-cole-j./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/sports/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/mckay2020/</loc>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorials/2019-10-27-lavaan-cfa-reproduction/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
@@ -113,67 +163,7 @@
   </url>
   
   <url>
-    <loc>/tags/cfa/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/cfa/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/code/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/code/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/factor-analysis/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/lavaan/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/lavaan/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/r/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/reproduce/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/reproduce/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorials/2019-10-27-lavaan-cfa-reproduction/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/tutorial/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/tutorial/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
@@ -198,68 +188,73 @@
   </url>
   
   <url>
-    <loc>/publication/papadakis2019/</loc>
+    <loc>/tags/tutorial/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tutorial/</loc>
+    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/papadakis2019/</loc>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/papadakis-z.-stamatis-a.-padgett-r.-n.-sanders-b.-k./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/psychometrics/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/rehfeld-d.-padgett-r.-n./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/rehfeld2019/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/padgett-r.-n.-morgan-g.-b./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/padgett2019a/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/faucher2019/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/faucher-m.-a.-greathouse-k.-l.-padgett-r.-n.-hastings-tolsma-m.-sheikh-a.-choudhury-a./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/infit-mnsq/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/measurement-error/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/outfit-mnsq/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/partial-credit-model/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
@@ -274,7 +269,7 @@
   
   <url>
     <loc>/tags/simulation/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
@@ -299,47 +294,47 @@
   
   <url>
     <loc>/authors/padgett-r.-n./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/1/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/deal-p.-j./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/forsse-j.-s./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/greathouse2019/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/k.-leigh-greathouse-james-robert-white-r.-noah-padgett-brittany-g.-perrotta-gregory-d.-jenkins-nicholas-chia-jun-chen/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/padgett2019b/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/papadakis-z./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/stamatis-a./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
@@ -363,12 +358,12 @@
   </url>
   
   <url>
-    <loc>/categories/teaching/</loc>
+    <loc>/tags/teaching/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
+    <loc>/categories/teaching/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
@@ -409,192 +404,192 @@
   
   <url>
     <loc>/authors/alex-valm/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/alexis-n.-hokenstad/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/amiran-h.-dzutsev/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/ana-i.-robles/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/archana-s.-bhat/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/ashely-j.-vargas/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/brid-m.-ryan/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/clayton-deming/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/curtis-c.-harris/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/elise-d.-bowman/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/eric-c.-polley/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/garth-d.-ehrlich/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/giorgio-trinchieri/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/publication/greathouse2018/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/james-r.-white/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jaroslaw-e.-krol/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jessica-a.-beck/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/joshua-c.-mell/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/joshua-p.-earl/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/julia-oh/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/julie-a.-segre/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/k.-leigh-greathouse/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/lung-cancer/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/marbin-a.-pineda/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/marina-r.-walther-antonio/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/microbiome/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/mohammed-a.-khan/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/mutation/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/natalia-von-muhlinen/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/paul-s.-meltzer/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sean-conlan/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sergey-v.-balashov/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/squamous-cell-carcinoma/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sven-bilke/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/tomer-cooks/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/tp53/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/tricia-m.-stickrod/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/valery-v.-bliskovsky/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
@@ -609,17 +604,17 @@
   
   <url>
     <loc>/publication/paneru2018/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/methods/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/paneru-k.-padgett-r.-n.-chen-h./</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>

@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 13 Feb 2020 16:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 08 Jun 2020 00:00:00 -0500</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
@@ -13,10 +13,66 @@
     </image>
     
     <item>
+      <title>categorical</title>
+      <link>/tags/categorical/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/tags/categorical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MLCFA</title>
+      <link>/tags/mlcfa/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/tags/mlcfa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>model fit</title>
+      <link>/tags/model-fit/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/tags/model-fit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multilevel</title>
+      <link>/tags/multilevel/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/tags/multilevel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ROC Analysis</title>
+      <link>/tags/roc-analysis/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/tags/roc-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>eRm</title>
       <link>/tags/erm/</link>
-      <pubDate>Thu, 13 Feb 2020 16:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/tags/erm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rasch</title>
+      <link>/tags/rasch/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/rasch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software review</title>
+      <link>/tags/software-review/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/software-review/</guid>
       <description></description>
     </item>
     
@@ -37,14 +93,6 @@
     </item>
     
     <item>
-      <title>Rasch</title>
-      <link>/tags/rasch/</link>
-      <pubDate>Thu, 13 Feb 2020 16:00:00 +0000</pubDate>
-      <guid>/tags/rasch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>obesity</title>
       <link>/tags/obesity/</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
@@ -61,46 +109,6 @@
     </item>
     
     <item>
-      <title>CFA</title>
-      <link>/tags/cfa/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/cfa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code</title>
-      <link>/tags/code/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lavaan</title>
-      <link>/tags/lavaan/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/lavaan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reproduce</title>
-      <link>/tags/reproduce/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/reproduce/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Stan</title>
       <link>/tags/stan/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
@@ -113,6 +121,14 @@
       <link>/tags/trouble/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       <guid>/tags/trouble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     

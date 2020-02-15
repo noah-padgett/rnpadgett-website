@@ -1,14 +1,15 @@
 ---
 title: "Stumbling with RStan"
-author: ~
+linktitle: Stumbling with RStan
 date: 2019-09-06
+type: docs
 reading_time: true
+toc: true
 categories: ["R", "Stan", "tutorial"]
 tags: ["R", "Stan", "trouble", "tutorial"]
-linktitle: Stumbling with RStan
 menu:
   tutorial:
-    parent: Level-2
+    parent: Stan
     weight: 2
 ---
 

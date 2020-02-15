@@ -555,93 +555,103 @@ Simulating More Complex Models We can easily extend the basic concepts of simula
 </nav>
 
 
-  <article class="article">
-
   
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-<div class="article-container pt-3">
-  <h1>Simulating Data from Regression Models</h1>
-
-  
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
       
-          Last updated on
+
+
+
+
+
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/">General</a>
+    <ul class="nav docs-sidenav">
       
-    
-    Feb 15, 2020
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a>, <a href="/categories/simulation/">simulation</a>, <a href="/categories/tutorial/">tutorial</a></span>
-  
-
-</div>
-
+      <li >
+        <a href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/">Intro to R and Simulation</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tutorials/2019-04-21-r-reg-sim/">Simulating Regression Models</a>
+      </li>
+      
+    </ul>
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </div>
   
-</div>
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/2019-10-27-lavaan-cfa-reproduction/">lavaan</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorials/2019-10-27-lavaan-cfa-reproduction/">Reproducing Lavaan</a>
+      </li>
+      
+    </ul>
+    
 
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/2019-06-06-rstan-humble/">Stan</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorials/2019-06-06-rstan-humble/">Stumbling with RStan</a>
+      </li>
+      
+    </ul>
+    
 
+  </div>
+  
+  
+</nav>
 
-  <div class="article-container">
+    </div>
 
-    <div class="article-style">
-      <p>This file extends the introduction I gave to simulating data from coin flips. 
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Simulating Data from Regression Models</h1>
+
+          <div class="article-style">
+            <p>This file extends the introduction I gave to simulating data from coin flips. 
 Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.</p>
 <h1 id="simulating-more-complex-models">Simulating More Complex Models</h1>
 <p>We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure. 
@@ -3108,13 +3118,9 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
 </code></pre>
 <p>Next is simulating data from factor models and structural equation models.</p>
 
-    </div>
+          </div>
 
-    
-
-
-
-
+          
 
 <div class="article-tags">
   
@@ -3128,103 +3134,35 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
 
 
 
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=/tutorials/2019-04-21-r-reg-sim/&amp;text=Simulating%20Data%20from%20Regression%20Models" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=/tutorials/2019-04-21-r-reg-sim/&amp;t=Simulating%20Data%20from%20Regression%20Models" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=Simulating%20Data%20from%20Regression%20Models&amp;body=/tutorials/2019-04-21-r-reg-sim/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/tutorials/2019-04-21-r-reg-sim/&amp;title=Simulating%20Data%20from%20Regression%20Models" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://web.whatsapp.com/send?text=Simulating%20Data%20from%20Regression%20Models%20/tutorials/2019-04-21-r-reg-sim/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=/tutorials/2019-04-21-r-reg-sim/&amp;title=Simulating%20Data%20from%20Regression%20Models" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/tutorials/2019-06-06-rstan-humble/" rel="next">Stumbling with RStan</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/" rel="prev">Introduction to R and Simulating Data</a>
+  </div>
+  
 </div>
 
+          </div>
+          
+        </div>
 
+        <div class="body-footer">
+          <p>Last updated on Feb 15, 2020</p>
 
-
-
-
-
-
-
-
-
-
-  
-
+          
 
 
 
@@ -3232,134 +3170,79 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
 
   
   
-  
-    
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <img class="portrait mr-3" src="/authors/admin/avatar_hudf649bb64a8b4d76b1cb10eb635e4d5f_28488_250x250_fill_lanczos_center_2.png" alt="Avatar">
-    
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="/">R Noah Padgett</a></h5>
-      <h6 class="card-subtitle">PhD Student in Educational Psychology</h6>
-      <p class="card-text">My research focuses on the developement, evaluation and application of advanced statistics for the study of human behavor.</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-    <li>
-      <a href="mailto:noah_padgett1@baylor.edu" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://twitter.com/rnoahpadgett" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.com/citations?user=hZIADgEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/noah-padgett" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/Padgett_CV.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
-</ul>
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/tutorials%5c2019-04-21-r-reg-sim.markdown">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
 
-    </div>
+
+
+
+          
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-rnoahpadgett-netlify-com" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
   </div>
+</div>
 
-
-
-
-
-
-
-
-
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/">Introduction to R and Simulating Data</a></li>
-      
-      <li><a href="/courses/2019-01-16-intro-to-r/">Introduction to R</a></li>
-      
-      <li><a href="/publication/paneru2018/">Estimation of zero-inflated population mean: A bootstrapping approach</a></li>
-      
-    </ul>
-  </div>
-  
-
-
-
-  </div>
-</article>
 
       
 
@@ -3410,6 +3293,11 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
     
 
     
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
     
 
     
@@ -3465,41 +3353,6 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
 
 
   
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-  <p class="powered-by">
-    
-      <a href="/privacy/">Privacy Policy</a>
-    
-    
-       &middot; 
-      <a href="/terms/">Terms</a>
-    
-  </p>
-  
-
-  <p class="powered-by">
-    © 2020 &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
   
 
   

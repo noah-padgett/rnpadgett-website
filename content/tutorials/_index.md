@@ -1,18 +1,25 @@
-+++
-title = "Overview"
+---
+# Course title, summary, and position in the list.
+#linktitle: An Example Course
+#summary: Learn how to use Academic's docs layout for publishing online courses, software documentation, and tutorials.
+# weight: 1
 
-date = 2018-09-09T00:00:00
-# lastmod = 2018-09-09T00:00:00
+# Page metadata.
+title: Overview
+date: "2018-09-09T00:00:00Z"
+lastmod: "2018-09-09T00:00:00Z"
+draft: false  # Is this a draft? true/false
+toc: true  # Show table of contents? true/false
+type: docs  # Do not modify.
 
-draft = false  # Is this a draft? true/false
-toc = true  # Show table of contents? true/false
-type = "docs"  # Do not modify.
-reading_time = true
 # Add menu entry to sidebar.
-[menu.tutorial]
-  name = "Overview"
-  weight = 1
-+++
+# - name: Declare this menu item as a parent with ID `name`.
+# - weight: Position of link in menu.
+menu:
+  tutorial:
+    name: Overview
+    weight: 1
+---
 
 In this folder, I am breaking up tutorials into different levels.
 The varying levels correspond to my conceptualization to how much knowledge may be needed to gain the most from the material presented.

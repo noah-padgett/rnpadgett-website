@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Padgett: Beyond-Stat</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Thu, 13 Feb 2020 16:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 08 Jun 2020 00:00:00 -0500</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Padgett: Beyond-Stat</title>
@@ -14,9 +14,9 @@
     
     <item>
       <title>Example Page 1</title>
-      <link>/courses/example/example1/</link>
+      <link>/courses/edp-6362/example1/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example1/</guid>
+      <guid>/courses/edp-6362/example1/</guid>
       <description>&lt;p&gt;In this tutorial, I&#39;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -35,9 +35,9 @@
     
     <item>
       <title>Example Page 2</title>
-      <link>/courses/example/example2/</link>
+      <link>/courses/edp-6362/example2/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0100</pubDate>
-      <guid>/courses/example/example2/</guid>
+      <guid>/courses/edp-6362/example2/</guid>
       <description>&lt;p&gt;Here are some more tips for getting started with Academic:&lt;/p&gt;
 &lt;h2 id=&#34;tip-3&#34;&gt;Tip 3&lt;/h2&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
@@ -52,6 +52,22 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Multilevel CFA with Ordered Categorical Data: A Simulation Study Comparing Fit Indices Across Robust Estimation Methods</title>
+      <link>/publication/padgett2020a/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/publication/padgett2020a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using the eRm package for Rasch Modeling</title>
+      <link>/publication/padgett2020b/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/padgett2020b/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -85,6 +101,9 @@
       <guid>/tutorials/2019-10-27-lavaan-cfa-reproduction/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;Purpose:&lt;/p&gt;
 &lt;p&gt;To reproduce the maximum likelihood estimates from lavaan.
@@ -503,6 +522,9 @@ But I have not figured out how to set up this computation myself yet.&lt;/p&gt;
       <guid>/tutorials/2019-06-06-rstan-humble/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;So I was listing to one of my favorite podcasts (DataFramed) a few months ago and a particularly interest guest was on talking.
 The guest was Michael Betancourt.&lt;/p&gt;
@@ -3393,6 +3415,9 @@ But, for now I will talk a little bit about how R can be used to generate values
       <guid>/tutorials/2018-12-10-r-simple-sim.rmarkdown/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers.
 R is an open source and free statistical programming language.
@@ -3507,8 +3532,8 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 &lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot;
-## [10] &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
+## [10] &amp;quot;HEADS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>

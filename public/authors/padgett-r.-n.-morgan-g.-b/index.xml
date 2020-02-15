@@ -5,12 +5,28 @@
     <link>/authors/padgett-r.-n.-morgan-g.-b./</link>
       <atom:link href="/authors/padgett-r.-n.-morgan-g.-b./index.xml" rel="self" type="application/rss+xml" />
     <description>**Padgett, R. N.** &amp; Morgan, G. B.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 08 Jun 2019 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 08 Jun 2020 00:00:00 -0500</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>**Padgett, R. N.** &amp; Morgan, G. B.</title>
       <link>/authors/padgett-r.-n.-morgan-g.-b./</link>
     </image>
+    
+    <item>
+      <title>Multilevel CFA with Ordered Categorical Data: A Simulation Study Comparing Fit Indices Across Robust Estimation Methods</title>
+      <link>/publication/padgett2020a/</link>
+      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <guid>/publication/padgett2020a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using the eRm package for Rasch Modeling</title>
+      <link>/publication/padgett2020b/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/padgett2020b/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An examination of sensitivity to measurement error of Rasch residual-based fit statistics</title>

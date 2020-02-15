@@ -1,15 +1,16 @@
 ---
 title: "Introduction to R and Simulating Data"
-author: ~
+linktitle: Intro to R and Simulation
 date: 2019-01-15T21:13:14-05:00
-reading_time: true
+type: docs
+toc: true
+#reading_time: 
 categories: ["R", "simulation", "tutorial"]
 tags: ["R", "simulation", "tutorial"]
 
-linktitle: Intro to R and Simulation
 menu:
   tutorial:
-    parent: Level-1
+    parent: General
     weight: 1
 ---
 

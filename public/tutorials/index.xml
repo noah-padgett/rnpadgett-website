@@ -5,7 +5,7 @@
     <link>/tutorials/</link>
       <atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <description>Overview</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Overview</title>
@@ -19,6 +19,9 @@
       <guid>/tutorials/2019-10-27-lavaan-cfa-reproduction/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;Purpose:&lt;/p&gt;
 &lt;p&gt;To reproduce the maximum likelihood estimates from lavaan.
@@ -437,6 +440,9 @@ But I have not figured out how to set up this computation myself yet.&lt;/p&gt;
       <guid>/tutorials/2019-06-06-rstan-humble/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;So I was listing to one of my favorite podcasts (DataFramed) a few months ago and a particularly interest guest was on talking.
 The guest was Michael Betancourt.&lt;/p&gt;
@@ -2992,6 +2998,9 @@ findPower(act.pwr.n, iv=&amp;quot;N&amp;quot;, power=0.8)
       <guid>/tutorials/2018-12-10-r-simple-sim.rmarkdown/</guid>
       <description>
 
+&lt;div id=&#34;TOC&#34;&gt;
+true
+&lt;/div&gt;
 
 &lt;p&gt;Before we get started with an introduction to simulation, we need to make sure that R and R Studio are downloaded on your computers.
 R is an open source and free statistical programming language.
@@ -3106,8 +3115,8 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 &lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot;
-## [10] &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
+## [10] &amp;quot;HEADS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
