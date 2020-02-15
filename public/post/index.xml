@@ -1,65 +1,391 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Padgett: Beyond-STAT</title>
+    <title>Posts | Padgett: Beyond-Stat</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Padgett: Beyond-STAT</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2019</copyright>
-    <lastBuildDate>Sat, 08 Dec 2018 00:00:00 -0600</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© {2020}</copyright>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
     
     <item>
       <title>Why I Write</title>
       <link>/post/why-i-write/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 +0000</pubDate>
-      
       <guid>/post/why-i-write/</guid>
-      <description>Recently, I have begun writing more and more. After a beer (or a few more than a beer) I was wondering how I ended up writing so much. Until I entered my current position as a PhD student I never thought writing would be a major aspect of my work. By work, I mean that I am researcher. My training is in educational measurement and advanced statistical methodology. A lot of what I consider my research is banging my head against a wall to get the darn computer software to quit returning errors during an analysis.</description>
+      <description>&lt;p&gt;Recently, I have begun writing more and more.
+After a beer (or a few more than a beer) I was wondering how I ended up writing so much.
+Until I entered my current position as a PhD student I never thought writing would be a major aspect of my work.
+By work, I mean that I am researcher.
+My training is in educational measurement and advanced statistical methodology.
+A lot of what I consider my research is banging my head against a wall to get the darn computer software to quit returning errors during an analysis.
+So, the prospect of being a writer didn&#39;t occur to me at first.&lt;/p&gt;
+&lt;p&gt;But, then I realized something important. &lt;em&gt;I want a job.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Yes, my motivation for getting my PhD is to get a job.
+To get a job, I need to communicate my research effectively enough to get publications.
+Describing complex statistical procedures in any form of plain English is anything but simple when first starting.
+One of my goals is to be able to write in a simple way for others to understand. 
+The issue I find is that writing about structural equation modeling, multilevel modeling, and other complex form of analysis is really easy to be overly complex.
+For example, when describing multilevel confirmatory factor analysis (a narely mouthful even to say) is easy to be complex and use sophistocated language that masks my lack of fully understanding the subject matter.
+But, this is not useful to anyone.
+Especially not for myself.&lt;/p&gt;
+&lt;p&gt;This brings me to &lt;em&gt;why I write.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I write to work on my skills with written English.
+I find being able to put words in order a skill that will help me no matter what job I end up doing once I graduate.
+Writing, just like any skill, take me time to learn.
+The more time I spend, the more I will I get out of the prusuit.&lt;/p&gt;
+&lt;h3 id=&#34;my-difficulties-with-writing&#34;&gt;My Difficulties with Writing&lt;/h3&gt;
+&lt;p&gt;All that information above feels good and all.
+But, what I want to work with mostly is being able to explain complex statistical methods in plain language.
+In order for me to get to the point where I am more confident in my communication skills I am practicing more.
+My major difficulty with writing in the land of advance methods is translating formulas to English.&lt;/p&gt;
+&lt;p&gt;One of the topics I am actively researching is mixture modeling.
+Mixture modeling is a way of classifying cases into like groups based on observed characteristics.
+The methods for mixture modeling are extremely varied.
+One of the simplest mixture models is a mixture of univariate normal distributions.
+That is also a mouthful that doesn&#39;t make much sense.&lt;/p&gt;
+&lt;p&gt;So, to backtrack to explain mixture modeling in the most general sense so that I can bring us back to the &amp;ldquo;simple case&amp;rdquo; of univariate mixtures.
+We can think of mixture models as a form of classification.
+Classification systems are found all around us.
+Libraries are prime examples of classification systems.
+I&#39;m a graduate student and I use the library so much.
+Yes, most research articles are online, but I am still using books for a lot of my information.
+Many of the best introductions to advanced methods are in textbooks now and my library contains many of the seminal texts.
+Without some way of organizing the massive number of books within a library I could never find the right books.
+Books could be classified in any number of ways.
+One way could be author name.
+Another could be date published. 
+Then one could be by subject matter.
+Each of these different methods for classifying books yields a different organization (a different classification system). 
+The classification system employed by libraries is analogous to the process that mixture modeling aims to mimic.&lt;/p&gt;
+&lt;p&gt;Despite mixture modeling being a method of classification, there is amuchmore general aspect to mixture modeling compared to library organizational systems.
+In mixture modeling, the classification is unknown at the start.
+Based on the observed data, we tried to create the system for classifying people into like groups.
+The system may not be the most optimal, but provide a set of rules that can be used to create classes of individuals based on observable characteristics.&lt;/p&gt;
+&lt;h2 id=&#34;beyond-developing-skills&#34;&gt;Beyond Developing Skills&lt;/h2&gt;
+&lt;p&gt;Being a skilled communicator takes practice, at least from my experience.
+The process of developing skills is by no means an easy path.
+This is why I write, to create meaningful opportunities for me to communicate topics that I am interested in. 
+In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Research collaborations,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Working towards being part of a scholarly community,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction to matrix algebra,&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Simple linear regression through matrix operations, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Being stuck with convergence B.S. in mixture modeling.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I am not sure in what order these different topics will come above. But these will come in time.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Reporting Growth Mixture Models</title>
       <link>/post/2018-12-17-gmm-reporting/</link>
       <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>/post/2018-12-17-gmm-reporting/</guid>
-      <description>I am currently wrapping up my work on a project investigating the alcoholic tendencies of adolesences. The data come from a data study in the United Kingdom, and I was brought on the project to help with the analysis. For this study, the aim was to investigate the presence of unobserved heterogeneity on the growth trajectories of this construct of &amp;lsquo;alcoholic tendencies.&amp;rsquo; For this analysis, I implemented a Growth Mixture Model (GMM).</description>
+      <description>&lt;p&gt;I am currently wrapping up my work on a project investigating the alcoholic tendencies of adolesences.
+The data come from a data study in the United Kingdom, and I was brought on the project to help with the analysis.
+For this study, the aim was to investigate the presence of unobserved heterogeneity on the growth trajectories of this construct of &amp;lsquo;alcoholic tendencies.&amp;rsquo; 
+For this analysis, I implemented a Growth Mixture Model (GMM). 
+A GMM is a very complex model that allows for the greatest flexibility in terms of statistical modeling. 
+The aim is to uncover the presence of unobserved groups of people with qualitatively distinct growth patterns.
+The term growth may be a little misleading as the pattern may be negative or no change may occur.
+I will not dive into the complexities of the modeling of GMMs in this post.
+The aim of this post is to show what I have found to be the most useful in terms of reporting GMMs from my readings.&lt;/p&gt;
+&lt;p&gt;The source for these guidelines come from textbooks on GMMs such Grimm, Ram and Estabrook (2017) and the great article van de Schoot et al. (2017).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Descriptive statistics of observed variables. For dichotomous items, report the proportion of 1’s or proportion of high responses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Measurement model, meaning how the four items measured over time relate to the construct of alcoholic tendencies, why a high value on this trait is bad because of a high value on each of these items.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Measurement invariance – this is where one of the first major limitations, statistical speaking, crops up. Measurement invariance cannot be completely investigated with dichotomous indicators. Below is a brief write-up I started on this topic a few months ago. This should get you started and includes some key references on this topic of measurement invariance with categorical variables. Also, the Grimm et al. (2017) book has some good sections on testing measurement invariance in Mplus (see pgs. 347-350, 381-389).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Describe the idea of linear growth on this latent trait. Where the growth model aims to describe the growth trajectory of the latent variable across the measurement occasions. We only investigated a linear growth curve. Now another limitation: the latent variable may have a non-linear growth trajectory. A nonlinear growth trajectory could be disguised as the presence of a latent class or this could hide the presence of latent classes do to an improperly specified growth pattern.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods of mixture modeling – idea that more than one latent class underlies these data. This is one of the main points that needs to be described as we are doing a growth mixture model (GMM). The GMM aims to described qualitatively different trajectories in growth on the latent trait over time. This is also where to describe how in our model, we are allowing for class specific intercepts and slopes in the growth model. Meaning that the classes on average have unique average growth trajectories and unique starting points on the latent trait.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Model selection – along with model summary across class enumerations. We will have estimated the class 1 through class 5 GMMs. We will need to report the log-likelihood, number of parameters, AIC, BIC, ssBIC, LMR-LRT. Along with information on which models had potential convergence issues. Although, hopefully there won’t be much convergence issues once we use more starts…. Anyways, that leads me into a important limitation: estimation of GMM, and mixture models in general, are notorious for being estimated at a local maximum on the likelihood surface and thus we may not have the true optimal solution for this model. We should note how the scale of the latent variable is also arbitrary and therefore the meanstructure was established based on the metric of the observed data and then rescaled to an arbitrary metric for presentation.  This will help us to describe which model is best fitting when looking at profile plots:&lt;/p&gt;
+&lt;p&gt;a.	Profile plots will include two types. 1) class average trajectories and 2) class profiles for all individuals by panels of the “raw” factor scores across time. I wrote an R script for you that does this based on two pieces of information the file name and number of classes. This only works for converged models where factor scores were reported.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Model results to report of final model:&lt;/p&gt;
+&lt;p&gt;a.	Class sizes&lt;/p&gt;
+&lt;p&gt;b.	Entropy&lt;/p&gt;
+&lt;p&gt;c.	Plot of the factor scores across time by each class&lt;/p&gt;
+&lt;p&gt;d.	Class intercepts and slopes with associated standard errors (SE)&lt;/p&gt;
+&lt;p&gt;e.	Effect of interventions across each class and associated SE&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Rens van de Schoot, Marit Sijbrandij, Sonja D. Winter, Sarah Depaoli &amp;amp; Jeroen K. Vermunt (2017). The GRoLTS-Checklist: Guidelines for Reporting on Latent Trajectory Studies, Structural Equation Modeling: A Multidisciplinary Journal, 24:3, 451-467, DOI: 10.1080 /10705511.2016.1247646&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Kevin J. Grimm, Nilam Ram &amp;amp; Ryne Estabrook (2017). Growth modeling: Structural equation and multilevel modeling approaches. New York, NY. Guilford Press.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
     </item>
     
     <item>
       <title>Starting up Beyond-STAT</title>
       <link>/post/2018-12-07-hello/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
-      
       <guid>/post/2018-12-07-hello/</guid>
-      <description>Hello people (or non-people, I aim to be inclusive)!
-My name is Noah, and this is the start of my website and tutorial center! I&amp;rsquo;ve been pondering why I should create a wedbsite and the ebst reason I ahve come up with is to have a single place to store many of my ideas and struggles (with R in particular). The name I came up with Beyond-STAT is mean to sum up my work.</description>
+      <description>&lt;p&gt;Hello people (or non-people, I aim to be inclusive)!&lt;/p&gt;
+&lt;p&gt;My name is Noah, and this is the start of my website and tutorial center!
+I&#39;ve been pondering why I should create a wedbsite and the ebst reason I ahve come up with is to have a single place to store many of my ideas and struggles (with R in particular). 
+The name I came up with Beyond-STAT is mean to sum up my work. 
+STAT us short for statistics and a plat on words at the same time.
+My sister is an ICU nurse and &amp;lsquo;stat&amp;rsquo; is an emergency call (not actually I have discovered, but it is a fun play on words I can take from TV land).
+My purpose for this play on words is to describe how I feel like statistics is used as an emergency to bring life back to many datasets. 
+My career feels like a similar vein at times, but I strive to focus on more than analyzing data to find a result (i.e, I strive to go &amp;lsquo;beyond&amp;rsquo; statitics).
+This focus stems from my drive to help other answer complex questions with data in a rigorous manner.
+Part of my training has focused on educational measurement and how to rigorously measure complex constructs.
+In this manner, the statistical models employed aim to help explain the process by which data were generated.&lt;/p&gt;
+&lt;p&gt;Describing processes is one of the major benefits to understanding statistics which I aim to do throguh my work. 
+This website contains some of my ideas on statistical modeling and measurement models.
+Also, this where many of my trial-and-error attempts are also given and maybe they will be helpful to someone.&lt;/p&gt;
+&lt;p&gt;Thank you for reading and I hope you find something interesting in my ramblings!&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0500</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>Academic makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.
-Follow our easy step by step guide to learn how to build your own free website with Academic. Check out the personal demo or the business demo of what you&amp;rsquo;ll get in less than 10 minutes.
- View the documentation Ask a question Request a feature or report a bug Updating?</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <title>Writing technical content in Academic</title>
+      <link>/post/writing-technical-content/</link>
+      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>/post/writing-technical-content/</guid>
+      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;On this page, you&#39;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```python
+import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
+data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
+data.head()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
+\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
+\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
+{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\&lt;/code&gt; math linebreak:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \&lt;br&gt;
+1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
+&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
+&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
+&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
+A[Hard] --&amp;gt;|Text| B(Round)
+B --&amp;gt; C{Decision}
+C --&amp;gt;|One| D[Result 1]
+C --&amp;gt;|Two| E[Result 2]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
+Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+loop Healthcheck
+    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+end
+Note right of John: Rational thoughts!
+John--&amp;gt;&amp;gt;Alice: Great!
+John-&amp;gt;&amp;gt;Bob: How about you?
+Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
+Class01 &amp;lt;|-- AveryLongClass : Cool
+&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
+Class09 --&amp;gt; C2 : Where am i?
+Class09 --* C3
+Class09 --|&amp;gt; Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
+  int id
+  size()
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```mermaid
+stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
+[*] --&amp;gt; Still
+Still --&amp;gt; [*]
+Still --&amp;gt; Moving
+Moving --&amp;gt; Still
+Moving --&amp;gt; Crash
+Crash --&amp;gt; [*]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
+&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
+- [x] Write diagram example
+- [ ] Do something else
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write math example&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Write diagram example&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt;Do something else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
+&lt;p&gt;Represent your data in tables:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
+&lt;p&gt;Academic supports a &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34;&gt;shortcode for asides&lt;/a&gt;, also referred to as &lt;em&gt;notices&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
+A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+{{% /alert %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;renders as&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
+</description>
     </item>
     
   </channel>

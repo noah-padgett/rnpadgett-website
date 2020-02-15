@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joshua P. Earl | Padgett: Beyond-STAT</title>
+    <link>/authors/joshua-p.-earl/</link>
+      <atom:link href="/authors/joshua-p.-earl/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joshua P. Earl</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Wed, 01 Aug 2018 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Joshua P. Earl</title>
+      <link>/authors/joshua-p.-earl/</link>
+    </image>
+    
+    <item>
+      <title>Interaction between the microbiome and TP53 in human lung cancer</title>
+      <link>/publication/genome-bio-lung-cancer/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/genome-bio-lung-cancer/</guid>
+      <description>&lt;p&gt;In this project, I contributed to the statistical analyses and making of figures.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

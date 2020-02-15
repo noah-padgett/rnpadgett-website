@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hanfeng Chen | Padgett: Beyond-STAT</title>
+    <link>/authors/hanfeng-chen/</link>
+      <atom:link href="/authors/hanfeng-chen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hanfeng Chen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Tue, 01 May 2018 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Hanfeng Chen</title>
+      <link>/authors/hanfeng-chen/</link>
+    </image>
+    
+    <item>
+      <title>Estimation of zero-inflated population mean: A bootstrapping approach</title>
+      <link>/publication/zinormal-boot/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/zinormal-boot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

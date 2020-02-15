@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stan | Padgett: Beyond-STAT</title>
+    <link>/categories/stan/</link>
+      <atom:link href="/categories/stan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Stan</title>
+      <link>/categories/stan/</link>
+    </image>
+    
+    <item>
+      <title>Stumbling with RStan</title>
+      <link>/tutorial/2019-06-06-rstan-humble/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/tutorial/2019-06-06-rstan-humble/</guid>
+      <description>
+
+
+&lt;p&gt;So I was listing to one of my favorite podcasts (DataFramed) a few months ago and a particularly interest guest was on talking.
+The guest was Michael Betancourt.&lt;/p&gt;
+&lt;div id=&#34;reading-about-the-really-cool-hmc&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Reading about the REALLY cool HMC&lt;/h1&gt;
+&lt;p&gt;HMC is the shorthand for Hamiltonian Monte Carlo.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;trouble-getting-started&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Trouble Getting Started&lt;/h1&gt;
+&lt;p&gt;The Getting Started page (‘&lt;a href=&#34;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&#34; class=&#34;uri&#34;&gt;https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started&lt;/a&gt;’) is extremely thorough and gives some excellent pointerr.
+The page boils down to using the following R commands to get started&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;if (file.exists(&amp;quot;.RData&amp;quot;)) file.remove(&amp;quot;.RData&amp;quot;)
+install.packages(&amp;quot;rstan&amp;quot;, repos = &amp;quot;https://cloud.r-project.org/&amp;quot;, dependencies = TRUE)
+
+
+library(rstan)
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+
+schools_dat &amp;lt;- list(J = 8, 
+                     y = c(28,  8, -3,  7, -1,  1, 18, 12),
+                     sigma = c(15, 10, 16, 11,  9, 11, 10, 18))
+
+fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The Stan file is also incredibly easy to set up by just going up to ‘Add File -&amp;gt; Stan File’.
+Super simple…&lt;/p&gt;
+&lt;p&gt;Or NOT…&lt;/p&gt;
+&lt;p&gt;I kept getting the following error through back at me.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Error in compileCode(f, code, language = language, verbose = verbose) :    Compilation ERROR, function(s)/method(s) not created! sh: g++: command not found make: *** [C:/PROGRA~1/R/R-3.6.0/etc/x64/Makeconf:215: file197870bf1a48.o] Error 127 In addition: Warning message: In system(cmd, intern = !verbose) :   running command &#39;C:/PROGRA~1/R/R-3.6.0/bin/x64/R CMD SHLIB file197870bf1a48.cpp 2&amp;gt; file197870bf1a48.cpp.err.txt&#39; had status 1 Error in sink(type = &#34;output&#34;) : invalid connection&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Super frustrating…&lt;/p&gt;
+&lt;p&gt;Anyways, it turns out that after too much time spent Googling and reading stackexchange and GitHub issues that I found how to I was able to fix this annoying startup issue.
+There isa file that is created when Stan is being installed that Windows somehow uses to run C++ code from R (I have no clue how this happens…) and there is just a simple setting that I needed to add in order to get Stan to work.
+Here is the link to where I found the solution (&lt;a href=&#34;https://github.com/stan-dev/rstan/issues/633&#34; class=&#34;uri&#34;&gt;https://github.com/stan-dev/rstan/issues/633&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Here is how I fixed the issue through R:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Uninstall rstan so that I can reinstall it properly&lt;/li&gt;
+&lt;li&gt;Automatically edit the .Makrvars file&lt;/li&gt;
+&lt;li&gt;In this file, make sure the following line is the only line contained in the file: ‘CXX14=$(BINPREF)g++ -O2 -march=native -mtune=nativee’&lt;/li&gt;
+&lt;li&gt;Install rstan&lt;/li&gt;
+&lt;li&gt;Start-Up Stan&lt;/li&gt;
+&lt;li&gt;Run Example (takes a minute)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Step 1
+remove.packages(&amp;#39;rstan&amp;#39;)
+
+# Steps 2-3
+dotR &amp;lt;- file.path(Sys.getenv(&amp;quot;HOME&amp;quot;), &amp;quot;.R&amp;quot;)
+if (!file.exists(dotR)) dir.create(dotR)
+M &amp;lt;- file.path(dotR, ifelse(.Platform$OS.type == &amp;quot;windows&amp;quot;, &amp;quot;Makevars.win&amp;quot;, &amp;quot;Makevars&amp;quot;))
+if (!file.exists(M)) file.create(M)
+cat(&amp;quot;CXX14=$(BINPREF)g++ -O2 -march=native -mtune=nativee&amp;quot;,
+    file = M, sep = &amp;quot;\n&amp;quot;, append = TRUE)
+
+# Step 4
+if (file.exists(&amp;quot;.RData&amp;quot;)) file.remove(&amp;quot;.RData&amp;quot;)
+install.packages(&amp;quot;rstan&amp;quot;, repos = &amp;quot;https://cloud.r-project.org/&amp;quot;, dependencies = TRUE)
+
+# Step 5
+library(rstan)
+options(mc.cores = parallel::detectCores())
+rstan_options(auto_write = TRUE)
+
+
+# Step 6
+schools_dat &amp;lt;- list(J = 8, 
+                    y = c(28,  8, -3,  7, -1,  1, 18, 12),
+                    sigma = c(15, 10, 16, 11,  9, 11, 10, 18))
+
+fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: I need to come back and edit this content…&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K. Leigh Greathouse | Padgett: Beyond-STAT</title>
+    <link>/authors/k.-leigh-greathouse/</link>
+      <atom:link href="/authors/k.-leigh-greathouse/index.xml" rel="self" type="application/rss+xml" />
+    <description>K. Leigh Greathouse</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>&amp;copy 2020</copyright><lastBuildDate>Thu, 28 Feb 2019 00:00:00 -0600</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>K. Leigh Greathouse</title>
+      <link>/authors/k.-leigh-greathouse/</link>
+    </image>
+    
+    <item>
+      <title>Gut microbiome meta-analysis reveals dysbiosis is independent of body mass index in predicting risk of obesityassociated CRC</title>
+      <link>/publication/crc-meta/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
+      <guid>/publication/crc-meta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interaction between the microbiome and TP53 in human lung cancer</title>
+      <link>/publication/genome-bio-lung-cancer/</link>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0500</pubDate>
+      <guid>/publication/genome-bio-lung-cancer/</guid>
+      <description>&lt;p&gt;In this project, I contributed to the statistical analyses and making of figures.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
