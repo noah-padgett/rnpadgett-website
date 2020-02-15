@@ -4,7 +4,7 @@ date = 2019-06-08T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Faucher, M. A.", "Greathouse, K. L.", "Padgett, R. N.", "Hastings-Tolsma, M.", "Sheikh, A.", "Choudhury, A."]
+authors = ["Faucher, M. A., Greathouse, K. L., **Padgett, R. N.**, Hastings-Tolsma, M., Sheikh, A., & Choudhury, A."]
 
 # Publication type.
 # Legend:
@@ -18,12 +18,12 @@ authors = ["Faucher, M. A.", "Greathouse, K. L.", "Padgett, R. N.", "Hastings-To
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "In *American Journal of Perinatology*."
-publication_short = "In *AJP*"
+publication = "*American Journal of Perinatology*."
+publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = "Forthcoming"
-# abstract_short = "Forthcoming"
+abstract = ""
+# abstract_short = ""
 
 # Is this a selected publication? (true/false)
 selected = true
@@ -71,5 +71,3 @@ math = true
   # Options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
   focal_point = ""
 +++
-
-In this project, I contributed to the statistical analyses and making of figures.

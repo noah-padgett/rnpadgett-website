@@ -1,6 +1,6 @@
 ---
 title: "Test Review: Comprehensive Assessment of Spoken Language Second Edition"
-authors: ["Rehfeld, D. & Padgett, R. N."]
+authors: ["Rehfeld, D. & **Padgett, R. N.**"]
 date: "2019-07-01"
 doi: "10.1177/0734282917753484"
 

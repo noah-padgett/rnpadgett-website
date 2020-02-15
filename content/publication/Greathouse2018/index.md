@@ -4,7 +4,7 @@ date = 2018-08-01T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["K. Leigh Greathouse", "James R. White", "Ashely J. Vargas", "Valery V. Bliskovsky", "Jessica A. Beck", "Natalia von Muhlinen", "Eric C. Polley", "Elise D. Bowman", "Mohammed A. Khan", "Ana I. Robles", "Tomer Cooks", "Bríd M. Ryan", "R. Noah Padgett", "Amiran H. Dzutsev", "Giorgio Trinchieri", "Marbin A. Pineda", "Sven Bilke", "Paul S. Meltzer", "Alexis N. Hokenstad", "Tricia M. Stickrod", "Marina R. Walther-Antonio", "Joshua P. Earl", "Joshua C. Mell", "Jaroslaw E. Krol", "Sergey V. Balashov", "Archana S. Bhat", "Garth D. Ehrlich", "Alex Valm", "Clayton Deming", "Sean Conlan", "Julia Oh", "Julie A. Segre", "Curtis C. Harris"]
+authors = ["K. Leigh Greathouse", "James R. White", "Ashely J. Vargas", "Valery V. Bliskovsky", "Jessica A. Beck", "Natalia von Muhlinen", "Eric C. Polley", "Elise D. Bowman", "Mohammed A. Khan", "Ana I. Robles", "Tomer Cooks", "Bríd M. Ryan", "**Padgett, R. N.**", "Amiran H. Dzutsev", "Giorgio Trinchieri", "Marbin A. Pineda", "Sven Bilke", "Paul S. Meltzer", "Alexis N. Hokenstad", "Tricia M. Stickrod", "Marina R. Walther-Antonio", "Joshua P. Earl", "Joshua C. Mell", "Jaroslaw E. Krol", "Sergey V. Balashov", "Archana S. Bhat", "Garth D. Ehrlich", "Alex Valm", "Clayton Deming", "Sean Conlan", "Julia Oh", "Julie A. Segre", "Curtis C. Harris"]
 
 # Publication type.
 # Legend:

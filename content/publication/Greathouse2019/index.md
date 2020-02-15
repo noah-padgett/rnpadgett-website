@@ -4,7 +4,7 @@ date = 2019-02-28T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["K. Leigh Greathouse, James Robert White, R. Noah Padgett, Brittany G. Perrotta, Gregory D. Jenkins, Nicholas Chia & Jun Chen"]
+authors = ["K. Leigh Greathouse, James Robert White, **R. Noah Padgett**, Brittany G. Perrotta, Gregory D. Jenkins, Nicholas Chia & Jun Chen"]
 
 # Publication type.
 # Legend:

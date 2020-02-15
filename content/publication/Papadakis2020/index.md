@@ -1,6 +1,6 @@
 ---
 title: "Baseball performance via the lens of anthropometric fitness testing and statistics: A longitudinal study"
-authors: ["Papadakis, Z., Padgett, R. N., Stamatis, A., & Karasch, R."]
+authors: ["Papadakis, Z., **Padgett, R. N.**, Stamatis, A., & Karasch, R."]
 date: "2020-01-30"
 doi: ""
 

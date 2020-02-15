@@ -4,7 +4,7 @@ date = 2019-06-08T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["R. Noah Padgett & Grant B. Morgan"]
+authors = ["**Padgett, R. N.** & Morgan, G. B."]
 
 # Publication type.
 # Legend:
@@ -18,7 +18,7 @@ authors = ["R. Noah Padgett & Grant B. Morgan"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Journal of Applied Measurement*."
+publication = "*Journal of Applied Measurement*"
 publication_short = ""
 
 # Abstract and optional shortened version.

@@ -4,7 +4,7 @@ date = 2018-05-01T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Khyam Paneru", "R. Noah Padgett", "Hanfeng Chen"]
+authors = ["Paneru, K., **Padgett, R. N.**, & Chen, H."]
 
 # Publication type.
 # Legend:
@@ -18,8 +18,8 @@ authors = ["Khyam Paneru", "R. Noah Padgett", "Hanfeng Chen"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "In *Journal of Modern Applied Statistical Methods*."
-publication_short = "In *JMASM*"
+publication = "*Journal of Modern Applied Statistical Methods*"
+publication_short = ""
 
 # Abstract and optional shortened version.
 abstract = "A mixture model was adopted from the maximum pseudo-likelihood approach under complex sampling designs to estimate the mean of zero-inflated population. To overcome the complexity and assumptions of asymptotic distribution, the maximum pseudo- likelihood function was used, but a bootstrapping procedure was proposed as an alternative. Bootstrap confidence intervals consistently capture the true means of zero-inflated populations of the simulation studies."
