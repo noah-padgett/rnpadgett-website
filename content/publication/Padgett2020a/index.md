@@ -1,7 +1,7 @@
 ---
 title: "Multilevel CFA with Ordered Categorical Data: A Simulation Study Comparing Fit Indices Across Robust Estimation Methods"
 authors: ["**Padgett, R. N.** & Morgan, G. B."]
-date: "2020-05-15"
+date: "2020-02-16"
 doi: ""
 
 # Custom status (optional). IF UNDER REVIEW OR IN PRESS
