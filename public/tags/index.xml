@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Mon, 08 Jun 2020 00:00:00 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Fri, 15 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Tags</title>
@@ -15,7 +15,7 @@
     <item>
       <title>categorical</title>
       <link>/tags/categorical/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/tags/categorical/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>MLCFA</title>
       <link>/tags/mlcfa/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/tags/mlcfa/</guid>
       <description></description>
     </item>
@@ -31,7 +31,7 @@
     <item>
       <title>model fit</title>
       <link>/tags/model-fit/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/tags/model-fit/</guid>
       <description></description>
     </item>
@@ -39,7 +39,7 @@
     <item>
       <title>multilevel</title>
       <link>/tags/multilevel/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/tags/multilevel/</guid>
       <description></description>
     </item>
@@ -47,7 +47,7 @@
     <item>
       <title>ROC Analysis</title>
       <link>/tags/roc-analysis/</link>
-      <pubDate>Mon, 08 Jun 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/tags/roc-analysis/</guid>
       <description></description>
     </item>
