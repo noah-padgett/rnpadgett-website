@@ -6,7 +6,7 @@ doi: ""
 
 # Custom status (optional). IF UNDER REVIEW OR IN PRESS
 #   Uncomment line below to enable. Replaces date with content of your choice.
-custom_status: "Under Review"
+custom_status: "In Press"
 
 
 # Schedule page publish date (NOT publication's date).
