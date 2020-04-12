@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview | Padgett: Beyond-Stat</title>
+    <title>Overview | Beyond-Stat</title>
     <link>/tutorials/</link>
       <atom:link href="/tutorials/index.xml" rel="self" type="application/rss+xml" />
     <description>Overview</description>
@@ -3115,8 +3115,8 @@ sample(x=population, size=1, prob = outcomeProb, replace = T)
 &lt;p&gt;Now, lets simulate more than one datum. We will now simulate 10 coin flips:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# To do so, we simply adjust the size to 10 instead of 1
 sample(x=population, size=10, prob = outcomeProb, replace = T)
-##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot;
-## [10] &amp;quot;HEADS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+##  [1] &amp;quot;TAILS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;TAILS&amp;quot; &amp;quot;HEADS&amp;quot; &amp;quot;HEADS&amp;quot;
+## [10] &amp;quot;TAILS&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
