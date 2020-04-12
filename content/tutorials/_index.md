@@ -28,8 +28,6 @@ In level-1, I will lay the foundational knowledge I think has helped me with bei
 
 The topics that I plan to discuss (and not in any particular order per se) are
 
-  1. matrix algebra,
-  2. simple linear regression,
-  3. linear regression with categorical indicators,
-  4. connection between t-test and regression, and
-  5. conceptualizing measurement error and factor analysis.
+  1. Sampling designs and survey weights
+  2. Factor analysis
+  3. Finite mixture modeling

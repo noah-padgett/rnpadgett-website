@@ -13,60 +13,42 @@ menu:
     weight: 2
 ---
 
-This file extends the introduction I gave to simulating data from coin flips. 
-Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning. 
-
-# Simulating More Complex Models
-
-We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure. 
-This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc.). 
 
 
-```r
-library(lavaan)
-```
-
-```
-## This is lavaan 0.6-5
-```
-
-```
-## lavaan is BETA software! Please report any bugs.
-```
-
-```r
-# what we think the relationship are
-hypothesized.model <- ' 
+<p>This file extends the introduction I gave to simulating data from coin flips.
+Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.</p>
+<div id="simulating-more-complex-models" class="section level1">
+<h1>Simulating More Complex Models</h1>
+<p>We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure.
+This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc.).</p>
+<pre class="r"><code>library(lavaan)</code></pre>
+<pre><code>## This is lavaan 0.6-5</code></pre>
+<pre><code>## lavaan is BETA software! Please report any bugs.</code></pre>
+<pre class="r"><code># what we think the relationship are
+hypothesized.model &lt;- &#39; 
 y ~ .1*x1 + .2*x2 + -.2*x3 + .5*x4
 y ~~ 1*y
-'
+&#39;
 
 ## Simulate 1 dataset
-pop.data <- simulateData(hypothesized.model, 
+pop.data &lt;- simulateData(hypothesized.model, 
                          sample.nobs=1000, 
                          seed=2 ## Seed is for reproducing results
                          )
 
 ## Visualize scatterplot matrix
-plot(pop.data)
-```
-
-<img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-1-1.png" width="672" />
-
-```r
-## Estimate the model we care about
-fitted.model <- '
+plot(pop.data)</code></pre>
+<p><img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>## Estimate the model we care about
+fitted.model &lt;- &#39;
 y ~ x1 + x2 + x3 + x4
-'
-fitted.out <- sem(
+&#39;
+fitted.out &lt;- sem(
   fitted.model, 
-  data=pop.data,estimator="ML")
+  data=pop.data,estimator=&quot;ML&quot;)
 ## Get summary statistics of results
-summary(fitted.out, rsquare=TRUE)
-```
-
-```
-## lavaan 0.6-5 ended normally after 10 iterations
+summary(fitted.out, rsquare=TRUE)</code></pre>
+<pre><code>## lavaan 0.6-5 ended normally after 10 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -86,7 +68,7 @@ summary(fitted.out, rsquare=TRUE)
 ##   Standard errors                             Standard
 ## 
 ## Regressions:
-##                    Estimate  Std.Err  z-value  P(>|z|)
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)
 ##   y ~                                                 
 ##     x1                0.111    0.032    3.402    0.001
 ##     x2                0.225    0.031    7.196    0.000
@@ -94,72 +76,35 @@ summary(fitted.out, rsquare=TRUE)
 ##     x4                0.542    0.034   15.841    0.000
 ## 
 ## Variances:
-##                    Estimate  Std.Err  z-value  P(>|z|)
+##                    Estimate  Std.Err  z-value  P(&gt;|z|)
 ##    .y                 1.036    0.046   22.361    0.000
 ## 
 ## R-Square:
 ##                    Estimate
-##     y                 0.273
-```
-
-
-# Simulation for Power Calculation
-
-
-```r
-library(simsem)
-```
-
-```
+##     y                 0.273</code></pre>
+</div>
+<div id="simulation-for-power-calculation" class="section level1">
+<h1>Simulation for Power Calculation</h1>
+<pre class="r"><code>library(simsem)</code></pre>
+<pre><code>## </code></pre>
+<pre><code>## #################################################################</code></pre>
+<pre><code>## This is simsem 0.5-14</code></pre>
+<pre><code>## simsem is BETA software! Please report any bugs.</code></pre>
+<pre><code>## simsem was first developed at the University of Kansas Center for</code></pre>
+<pre><code>## Research Methods and Data Analysis, under NSF Grant 1053160.</code></pre>
+<pre><code>## #################################################################</code></pre>
+<pre><code>## 
+## Attaching package: &#39;simsem&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:lavaan&#39;:
 ## 
-```
-
-```
-## #################################################################
-```
-
-```
-## This is simsem 0.5-14
-```
-
-```
-## simsem is BETA software! Please report any bugs.
-```
-
-```
-## simsem was first developed at the University of Kansas Center for
-```
-
-```
-## Research Methods and Data Analysis, under NSF Grant 1053160.
-```
-
-```
-## #################################################################
-```
-
-```
-## 
-## Attaching package: 'simsem'
-```
-
-```
-## The following object is masked from 'package:lavaan':
-## 
-##     inspect
-```
-
-```r
-## Simulate 100 datasets of size 100 from the population
-act.power <- sim(nRep=100,
+##     inspect</code></pre>
+<pre class="r"><code>## Simulate 100 datasets of size 100 from the population
+act.power &lt;- sim(nRep=100,
                  generate=hypothesized.model,
                  model=fitted.model,
                  n =100,
-                 lavaanfun = "sem")
-```
-
-```
-## Progress: 1 / 100 
+                 lavaanfun = &quot;sem&quot;)</code></pre>
+<pre><code>## Progress: 1 / 100 
 ## Progress: 2 / 100 
 ## Progress: 3 / 100 
 ## Progress: 4 / 100 
@@ -258,17 +203,11 @@ act.power <- sim(nRep=100,
 ## Progress: 97 / 100 
 ## Progress: 98 / 100 
 ## Progress: 99 / 100 
-## Progress: 100 / 100
-```
-
-```r
-## Extract summary information
-sim.parms<-summaryParam(act.power,alpha = 0.05,detail=TRUE)
-sim.parms
-```
-
-```
-##      Estimate Average Estimate SD Average SE Power (Not equal 0)     Std Est
+## Progress: 100 / 100</code></pre>
+<pre class="r"><code>## Extract summary information
+sim.parms&lt;-summaryParam(act.power,alpha = 0.05,detail=TRUE)
+sim.parms</code></pre>
+<pre><code>##      Estimate Average Estimate SD Average SE Power (Not equal 0)     Std Est
 ## y~x1        0.1097629  0.09554286 0.10086173                0.20  0.09445416
 ## y~x2        0.2049147  0.09947488 0.09872815                0.54  0.17723176
 ## y~x3       -0.1977827  0.10642876 0.09910948                0.50 -0.17213624
@@ -291,30 +230,22 @@ sim.parms
 ## y~x2  0.03941553
 ## y~x3  0.04763438
 ## y~x4  0.03956116
-## y~~y  0.07754099
-```
-
-
-# Simulation for Sample Size Determination
-
-Now, we want to calculate the power for a range of sample sizes. 
-By calculating power across a range we are able to identify the sample size needed to reach power of .80 fora particular parameter of interest. 
-Let's try to answer this question:
-*What is sample size I need if I want to detect the effect of x2 on y?*
-
-
-```r
-## Simulate data for a range of sample sizes 
+## y~~y  0.07754099</code></pre>
+</div>
+<div id="simulation-for-sample-size-determination" class="section level1">
+<h1>Simulation for Sample Size Determination</h1>
+<p>Now, we want to calculate the power for a range of sample sizes.
+By calculating power across a range we are able to identify the sample size needed to reach power of .80 fora particular parameter of interest.
+Let’s try to answer this question:
+<em>What is sample size I need if I want to detect the effect of x2 on y?</em></p>
+<pre class="r"><code>## Simulate data for a range of sample sizes 
 # seq(100,500,10): pick samples sizes from 100 to 500 going by 10 each time, so we will have 100, 110, 120, 130, ... , 500.
 # the rep(..., 100): each sample size is replicated 100 times, so we will effectively run 100 datasets with sample size 110, then 100 datasets with sample size 500, etc. 
-act.n <- sim(model=fitted.model, 
+act.n &lt;- sim(model=fitted.model, 
              generate=hypothesized.model, 
              n = rep(seq(100,300,10), 100), 
-             lavaanfun = "sem")
-```
-
-```
-## Progress: 1 / 2100 
+             lavaanfun = &quot;sem&quot;)</code></pre>
+<pre><code>## Progress: 1 / 2100 
 ## Progress: 2 / 2100 
 ## Progress: 3 / 2100 
 ## Progress: 4 / 2100 
@@ -2413,27 +2344,17 @@ act.n <- sim(model=fitted.model,
 ## Progress: 2097 / 2100 
 ## Progress: 2098 / 2100 
 ## Progress: 2099 / 2100 
-## Progress: 2100 / 2100
-```
-
-```r
-## Create a power plot 
-plotPower(act.n, alpha=0.05, powerParam="y~x2")
-abline(h=.8, lwd=2, lty=2)
-```
-
-<img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-3-1.png" width="672" />
-
-```r
-## Rerun for more fine grained information across wider range of sample sizes
-act.n <- sim(model=fitted.model, 
+## Progress: 2100 / 2100</code></pre>
+<pre class="r"><code>## Create a power plot 
+plotPower(act.n, alpha=0.05, powerParam=&quot;y~x2&quot;)
+abline(h=.8, lwd=2, lty=2)</code></pre>
+<p><img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<pre class="r"><code>## Rerun for more fine grained information across wider range of sample sizes
+act.n &lt;- sim(model=fitted.model, 
              n =seq(10,1000,10), 
              generate=hypothesized.model, 
-             lavaanfun = "sem")
-```
-
-```
-## Progress: 1 / 100 
+             lavaanfun = &quot;sem&quot;)</code></pre>
+<pre><code>## Progress: 1 / 100 
 ## Progress: 2 / 100 
 ## Progress: 3 / 100 
 ## Progress: 4 / 100 
@@ -2532,17 +2453,10 @@ act.n <- sim(model=fitted.model,
 ## Progress: 97 / 100 
 ## Progress: 98 / 100 
 ## Progress: 99 / 100 
-## Progress: 100 / 100
-```
-
-```r
-act.pwr.n <- getPower(act.n, alpha = 0.05)
-findPower(act.pwr.n, iv="N", power=0.8)
-```
-
-```
-## y~x1 y~x2 y~x3 y~x4 y~~y 
-##  801  144  180   16  Inf
-```
-
-Next is simulating data from factor models and structural equation models.
+## Progress: 100 / 100</code></pre>
+<pre class="r"><code>act.pwr.n &lt;- getPower(act.n, alpha = 0.05)
+findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)</code></pre>
+<pre><code>## y~x1 y~x2 y~x3 y~x4 y~~y 
+##  801  144  180   16  Inf</code></pre>
+<p>Next is simulating data from factor models and structural equation models.</p>
+</div>

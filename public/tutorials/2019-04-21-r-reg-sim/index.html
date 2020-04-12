@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="This file extends the introduction I gave to simulating data from coin flips. Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.
-Simulating More Complex Models We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure. This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc.">
+  <meta name="description" content="This file extends the introduction I gave to simulating data from coin flips.Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.
+Simulating More Complex ModelsWe can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure.This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc.">
 
   
   <link rel="alternate" hreflang="en-us" href="/tutorials/2019-04-21-r-reg-sim/">
@@ -266,14 +266,14 @@ Simulating More Complex Models We can easily extend the basic concepts of simula
   <meta property="og:site_name" content="Beyond-Stat">
   <meta property="og:url" content="/tutorials/2019-04-21-r-reg-sim/">
   <meta property="og:title" content="Simulating Data from Regression Models | Beyond-Stat">
-  <meta property="og:description" content="This file extends the introduction I gave to simulating data from coin flips. Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.
-Simulating More Complex Models We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure. This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="This file extends the introduction I gave to simulating data from coin flips.Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.
+Simulating More Complex ModelsWe can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure.This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-04-14T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-02-15T17:29:45-06:00">
+    <meta property="article:modified_time" content="2019-04-14T00:00:00&#43;00:00">
   
 
   
@@ -601,11 +601,11 @@ Simulating More Complex Models We can easily extend the basic concepts of simula
   </div>
   
   <div class="docs-toc-item">
-    <a class="docs-toc-link" href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/">General</a>
+    <a class="docs-toc-link" href="/tutorials/2018-12-10-r-simple-sim/">General</a>
     <ul class="nav docs-sidenav">
       
       <li >
-        <a href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/">Intro to R and Simulation</a>
+        <a href="/tutorials/2018-12-10-r-simple-sim/">Intro to R and Simulation</a>
       </li>
       
       <li class="active">
@@ -658,22 +658,23 @@ Simulating More Complex Models We can easily extend the basic concepts of simula
           <h1>Simulating Data from Regression Models</h1>
 
           <div class="article-style">
-            <p>This file extends the introduction I gave to simulating data from coin flips. 
+            
+
+
+<p>This file extends the introduction I gave to simulating data from coin flips.
 Now, the goal is to show how the basics extend and can easily be used for helpful parts of study design planning.</p>
-<h1 id="simulating-more-complex-models">Simulating More Complex Models</h1>
-<p>We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure. 
+<div id="simulating-more-complex-models" class="section level1">
+<h1>Simulating More Complex Models</h1>
+<p>We can easily extend the basic concepts of simulating from a simple population to simulating data from a more complex data structure.
 This is how we can simulate a simple regression model with one outcome (Y) and five predictors (x1, x2, etc.).</p>
-<pre><code class="language-r">library(lavaan)
-</code></pre>
-<pre><code>## This is lavaan 0.6-5
-</code></pre>
-<pre><code>## lavaan is BETA software! Please report any bugs.
-</code></pre>
-<pre><code class="language-r"># what we think the relationship are
-hypothesized.model &lt;- ' 
+<pre class="r"><code>library(lavaan)</code></pre>
+<pre><code>## This is lavaan 0.6-5</code></pre>
+<pre><code>## lavaan is BETA software! Please report any bugs.</code></pre>
+<pre class="r"><code># what we think the relationship are
+hypothesized.model &lt;- &#39; 
 y ~ .1*x1 + .2*x2 + -.2*x3 + .5*x4
 y ~~ 1*y
-'
+&#39;
 
 ## Simulate 1 dataset
 pop.data &lt;- simulateData(hypothesized.model, 
@@ -682,19 +683,17 @@ pop.data &lt;- simulateData(hypothesized.model,
                          )
 
 ## Visualize scatterplot matrix
-plot(pop.data)
-</code></pre>
+plot(pop.data)</code></pre>
 <p><img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre><code class="language-r">## Estimate the model we care about
-fitted.model &lt;- '
+<pre class="r"><code>## Estimate the model we care about
+fitted.model &lt;- &#39;
 y ~ x1 + x2 + x3 + x4
-'
+&#39;
 fitted.out &lt;- sem(
   fitted.model, 
   data=pop.data,estimator=&quot;ML&quot;)
 ## Get summary statistics of results
-summary(fitted.out, rsquare=TRUE)
-</code></pre>
+summary(fitted.out, rsquare=TRUE)</code></pre>
 <pre><code>## lavaan 0.6-5 ended normally after 10 iterations
 ## 
 ##   Estimator                                         ML
@@ -728,39 +727,29 @@ summary(fitted.out, rsquare=TRUE)
 ## 
 ## R-Square:
 ##                    Estimate
-##     y                 0.273
-</code></pre>
-<h1 id="simulation-for-power-calculation">Simulation for Power Calculation</h1>
-<pre><code class="language-r">library(simsem)
-</code></pre>
+##     y                 0.273</code></pre>
+</div>
+<div id="simulation-for-power-calculation" class="section level1">
+<h1>Simulation for Power Calculation</h1>
+<pre class="r"><code>library(simsem)</code></pre>
+<pre><code>## </code></pre>
+<pre><code>## #################################################################</code></pre>
+<pre><code>## This is simsem 0.5-14</code></pre>
+<pre><code>## simsem is BETA software! Please report any bugs.</code></pre>
+<pre><code>## simsem was first developed at the University of Kansas Center for</code></pre>
+<pre><code>## Research Methods and Data Analysis, under NSF Grant 1053160.</code></pre>
+<pre><code>## #################################################################</code></pre>
 <pre><code>## 
-</code></pre>
-<pre><code>## #################################################################
-</code></pre>
-<pre><code>## This is simsem 0.5-14
-</code></pre>
-<pre><code>## simsem is BETA software! Please report any bugs.
-</code></pre>
-<pre><code>## simsem was first developed at the University of Kansas Center for
-</code></pre>
-<pre><code>## Research Methods and Data Analysis, under NSF Grant 1053160.
-</code></pre>
-<pre><code>## #################################################################
-</code></pre>
-<pre><code>## 
-## Attaching package: 'simsem'
-</code></pre>
-<pre><code>## The following object is masked from 'package:lavaan':
+## Attaching package: &#39;simsem&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:lavaan&#39;:
 ## 
-##     inspect
-</code></pre>
-<pre><code class="language-r">## Simulate 100 datasets of size 100 from the population
+##     inspect</code></pre>
+<pre class="r"><code>## Simulate 100 datasets of size 100 from the population
 act.power &lt;- sim(nRep=100,
                  generate=hypothesized.model,
                  model=fitted.model,
                  n =100,
-                 lavaanfun = &quot;sem&quot;)
-</code></pre>
+                 lavaanfun = &quot;sem&quot;)</code></pre>
 <pre><code>## Progress: 1 / 100 
 ## Progress: 2 / 100 
 ## Progress: 3 / 100 
@@ -860,12 +849,10 @@ act.power &lt;- sim(nRep=100,
 ## Progress: 97 / 100 
 ## Progress: 98 / 100 
 ## Progress: 99 / 100 
-## Progress: 100 / 100
-</code></pre>
-<pre><code class="language-r">## Extract summary information
+## Progress: 100 / 100</code></pre>
+<pre class="r"><code>## Extract summary information
 sim.parms&lt;-summaryParam(act.power,alpha = 0.05,detail=TRUE)
-sim.parms
-</code></pre>
+sim.parms</code></pre>
 <pre><code>##      Estimate Average Estimate SD Average SE Power (Not equal 0)     Std Est
 ## y~x1        0.1097629  0.09554286 0.10086173                0.20  0.09445416
 ## y~x2        0.2049147  0.09947488 0.09872815                0.54  0.17723176
@@ -889,21 +876,21 @@ sim.parms
 ## y~x2  0.03941553
 ## y~x3  0.04763438
 ## y~x4  0.03956116
-## y~~y  0.07754099
-</code></pre>
-<h1 id="simulation-for-sample-size-determination">Simulation for Sample Size Determination</h1>
-<p>Now, we want to calculate the power for a range of sample sizes. 
-By calculating power across a range we are able to identify the sample size needed to reach power of .80 fora particular parameter of interest. 
-Let's try to answer this question:
+## y~~y  0.07754099</code></pre>
+</div>
+<div id="simulation-for-sample-size-determination" class="section level1">
+<h1>Simulation for Sample Size Determination</h1>
+<p>Now, we want to calculate the power for a range of sample sizes.
+By calculating power across a range we are able to identify the sample size needed to reach power of .80 fora particular parameter of interest.
+Let’s try to answer this question:
 <em>What is sample size I need if I want to detect the effect of x2 on y?</em></p>
-<pre><code class="language-r">## Simulate data for a range of sample sizes 
+<pre class="r"><code>## Simulate data for a range of sample sizes 
 # seq(100,500,10): pick samples sizes from 100 to 500 going by 10 each time, so we will have 100, 110, 120, 130, ... , 500.
 # the rep(..., 100): each sample size is replicated 100 times, so we will effectively run 100 datasets with sample size 110, then 100 datasets with sample size 500, etc. 
 act.n &lt;- sim(model=fitted.model, 
              generate=hypothesized.model, 
              n = rep(seq(100,300,10), 100), 
-             lavaanfun = &quot;sem&quot;)
-</code></pre>
+             lavaanfun = &quot;sem&quot;)</code></pre>
 <pre><code>## Progress: 1 / 2100 
 ## Progress: 2 / 2100 
 ## Progress: 3 / 2100 
@@ -3003,19 +2990,16 @@ act.n &lt;- sim(model=fitted.model,
 ## Progress: 2097 / 2100 
 ## Progress: 2098 / 2100 
 ## Progress: 2099 / 2100 
-## Progress: 2100 / 2100
-</code></pre>
-<pre><code class="language-r">## Create a power plot 
+## Progress: 2100 / 2100</code></pre>
+<pre class="r"><code>## Create a power plot 
 plotPower(act.n, alpha=0.05, powerParam=&quot;y~x2&quot;)
-abline(h=.8, lwd=2, lty=2)
-</code></pre>
+abline(h=.8, lwd=2, lty=2)</code></pre>
 <p><img src="/tutorials/2019-04-21-r-reg-sim_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<pre><code class="language-r">## Rerun for more fine grained information across wider range of sample sizes
+<pre class="r"><code>## Rerun for more fine grained information across wider range of sample sizes
 act.n &lt;- sim(model=fitted.model, 
              n =seq(10,1000,10), 
              generate=hypothesized.model, 
-             lavaanfun = &quot;sem&quot;)
-</code></pre>
+             lavaanfun = &quot;sem&quot;)</code></pre>
 <pre><code>## Progress: 1 / 100 
 ## Progress: 2 / 100 
 ## Progress: 3 / 100 
@@ -3115,15 +3099,13 @@ act.n &lt;- sim(model=fitted.model,
 ## Progress: 97 / 100 
 ## Progress: 98 / 100 
 ## Progress: 99 / 100 
-## Progress: 100 / 100
-</code></pre>
-<pre><code class="language-r">act.pwr.n &lt;- getPower(act.n, alpha = 0.05)
-findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
-</code></pre>
+## Progress: 100 / 100</code></pre>
+<pre class="r"><code>act.pwr.n &lt;- getPower(act.n, alpha = 0.05)
+findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)</code></pre>
 <pre><code>## y~x1 y~x2 y~x3 y~x4 y~~y 
-##  801  144  180   16  Inf
-</code></pre>
+##  801  144  180   16  Inf</code></pre>
 <p>Next is simulating data from factor models and structural equation models.</p>
+</div>
 
           </div>
 
@@ -3157,7 +3139,7 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/tutorials/2018-12-10-r-simple-sim.rmarkdown/" rel="prev">Introduction to R and Simulating Data</a>
+    <a href="/tutorials/2018-12-10-r-simple-sim/" rel="prev">Introduction to R and Simulating Data</a>
   </div>
   
 </div>
@@ -3167,7 +3149,7 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Feb 15, 2020</p>
+          <p>Last updated on Apr 14, 2019</p>
 
           
 
@@ -3179,7 +3161,7 @@ findPower(act.pwr.n, iv=&quot;N&quot;, power=0.8)
   
 
 <p class="edit-page">
-  <a href="https://github.com/noah-padgett/rnpadgett-website/edit/master/content/tutorials%5c2019-04-21-r-reg-sim.markdown">
+  <a href="https://github.com/noah-padgett/rnpadgett-website/edit/master/content/tutorials%5c2019-04-21-r-reg-sim.html">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>

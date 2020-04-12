@@ -79,7 +79,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-17T11:20:48-06:00</lastmod>
   </url>
   
   <url>
@@ -109,7 +109,7 @@
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T21:47:16-06:00</lastmod>
   </url>
   
   <url>
@@ -164,12 +164,12 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T17:29:45-06:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T17:29:45-06:00</lastmod>
   </url>
   
   <url>
@@ -194,12 +194,12 @@
   
   <url>
     <loc>/categories/tutorial/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T17:29:45-06:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/tutorial/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T17:29:45-06:00</lastmod>
   </url>
   
   <url>
@@ -264,17 +264,17 @@
   
   <url>
     <loc>/tutorials/2019-04-21-r-reg-sim/</loc>
-    <lastmod>2020-02-15T17:29:45-06:00</lastmod>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/simulation/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/simulation/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
+    <lastmod>2019-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -358,17 +358,17 @@
   </url>
   
   <url>
-    <loc>/tutorials/2018-12-10-r-simple-sim.rmarkdown/</loc>
-    <lastmod>2020-04-12T01:32:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/teaching/</loc>
-    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+    <loc>/tutorials/2018-12-10-r-simple-sim/</loc>
+    <lastmod>2019-01-15T21:13:14-05:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/teaching/</loc>
+    <lastmod>2020-02-15T16:01:58-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
     <lastmod>2020-02-15T16:01:58-06:00</lastmod>
   </url>
   
