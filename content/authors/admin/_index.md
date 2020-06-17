@@ -21,6 +21,7 @@ organizations:
 bio: My research focuses on the developement, evaluation and application of advanced statistics for the study of human behavor.
 
 interests:
+- Random Effects Models
 - Educational Measurement
 - Structural Equation Modeling
 - Survey and Sampling Designs

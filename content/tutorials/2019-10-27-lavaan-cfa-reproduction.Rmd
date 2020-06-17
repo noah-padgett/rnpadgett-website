@@ -49,9 +49,9 @@ There are four major sections that I will go through
 
 Whenever I have read about CFA/SEM, I have been given this kind of vague idea on how estimation works.
 The general idea I have read/been talk is that there's this fit function
-\[
-F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]
-\]
+
+$$F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]$$
+
 where,
 
 * $\mid . \mid$ is the determinant of a matrix;

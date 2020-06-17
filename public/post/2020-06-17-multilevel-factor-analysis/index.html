@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="R Noah Padgett">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Multilevel confirmatory factory analysis (ML-CFA) is a fancy analysis.So fancy in fact, I’m still not convinced if the analysis can be used properly.My interest in ML-CFA stemmed from a study a colleague and I did as part of a meta-analysis on a cross-cultural resilience measurement scale (Renbarger et al., In Press).Our aim was to use raw data from as many studies we could obtain and investigate the multilevel structure of the measure.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2020-06-17-multilevel-factor-analysis/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="rgb(0, 136, 204)">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130771307-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-130771307-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/post/2020-06-17-multilevel-factor-analysis/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Beyond-Stat">
+  <meta property="og:url" content="/post/2020-06-17-multilevel-factor-analysis/">
+  <meta property="og:title" content="Multilevel Confirmatory Factor Analysis | Beyond-Stat">
+  <meta property="og:description" content="Multilevel confirmatory factory analysis (ML-CFA) is a fancy analysis.So fancy in fact, I’m still not convinced if the analysis can be used properly.My interest in ML-CFA stemmed from a study a colleague and I did as part of a meta-analysis on a cross-cultural resilience measurement scale (Renbarger et al., In Press).Our aim was to use raw data from as many studies we could obtain and investigate the multilevel structure of the measure."><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-06-17T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-06-17T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "/post/2020-06-17-multilevel-factor-analysis/"
+  },
+  "headline": "Multilevel Confirmatory Factor Analysis",
+  
+  "datePublished": "2020-06-17T00:00:00Z",
+  "dateModified": "2020-06-17T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "R Noah Padgett"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Beyond-Stat",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "img//"
+    }
+  },
+  "description": "Multilevel confirmatory factory analysis (ML-CFA) is a fancy analysis.\rSo fancy in fact, I’m still not convinced if the analysis can be used properly.\rMy interest in ML-CFA stemmed from a study a colleague and I did as part of a meta-analysis on a cross-cultural resilience measurement scale (Renbarger et al., In Press).\rOur aim was to use raw data from as many studies we could obtain and investigate the multilevel structure of the measure."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Multilevel Confirmatory Factor Analysis | Beyond-Stat</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Beyond-Stat</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Beyond-Stat</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/tutorials/"><span>Tutorials</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Multilevel Confirmatory Factor Analysis</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 17, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/2020-06-17-multilevel-factor-analysis/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p>Multilevel confirmatory factory analysis (ML-CFA) is a fancy analysis.
+So fancy in fact, I’m still not convinced if the analysis can be used properly.
+My interest in ML-CFA stemmed from a study a colleague and I did as part of a meta-analysis on a cross-cultural resilience measurement scale (Renbarger et al., In Press).
+Our aim was to use raw data from as many studies we could obtain and investigate the multilevel structure of the measure.
+The key result we were interested in was whether the measurement of the construct significantly varied across groups.
+We hypothesized that an invariant factor existed across levels (namely, resilience in youth).
+We investigated what proportion of variance in resilience was between groups compared to within group.
+This may sound familiar to an <em>intraclass correlation</em> from traditional multilevel modeling, and if fact this is what we were interested in (or at the very least I was lol).
+Basically, the analysis boiled down to me being confused about how the actually use ML-CFA.
+So, here is my understanding(-ish) of a basic(-ish) <strong>multilevel factor analysis model</strong>.</p>
+<div id="the-model" class="section level1">
+<h1>The Model</h1>
+<p>The model at it’s core feels quite intuitive.
+The model starts with saying that the all items/indicators is a combination of individual component (<span class="math inline">\(y_{i}\)</span> or <span class="math inline">\(y_{individual}\)</span>) and a group average component (<span class="math inline">\(y_{g}\)</span> or <span class="math inline">\(y_{group}\)</span>):</p>
+<p><span class="math display">\[y_{ig} = y_{i} + y_{g}\]</span>
+or equivalently,
+<span class="math display">\[y_{total} = y_{individual} + y_{group}\]</span>
+The group component to individual items can be thought of as the <em>average</em> for the group.
+In factor analysis though, we usually have many items that are reflective of some underlying construct of interest (e.g., youth resilience, motivation, perceived degree of safety, etc.).
+When we have multiple items/indicators we have to replace our nice simple additive pieces into a sum of multivariate pieces (say for <span class="math inline">\(J\)</span> items),</p>
+<p><span class="math display">\[\mathbf{y}_{ig} = \mathbf{y}_{i} + \mathbf{y}_{g}\]</span>
+where each is a vector of length <span class="math inline">\(J\)</span>.
+Part of the purpose of factor analysis is to develop a theoretical model for how each component contributes to the total observed score on each item.
+Hence, the connection to factor analysis.
+For a single item <span class="math inline">\(j\)</span>, the observed score is a partial manifestation of the underlying construct of interest.
+This results in a decomposition of the observed score into the individual (within group) contribution and the group effect
+<span class="math display">\[\begin{align*}
+y_{ij} &amp;= \tau_{ij} + \lambda_{ij}\eta_{i} + \varepsilon_{ij}\\ 
+y_{gj} &amp;= \tau_{gj} + \lambda_{gj}\eta_{g} + \varepsilon_{gj}
+\end{align*}\]</span>
+where</p>
+<ul>
+<li><span class="math inline">\(\tau\)</span> is the intercepts at each level:
+<ul>
+<li><span class="math inline">\(\tau_{ij}\)</span> is the within group average response to item <span class="math inline">\(j\)</span></li>
+<li><span class="math inline">\(\tau_{ij}\)</span> is the between group or <em>grand mean</em> response to item <span class="math inline">\(j\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\lambda\)</span> are the factor loadings that relate the construct(s) to items
+<ul>
+<li><span class="math inline">\(\lambda_{ij}\)</span> is the strength of the relationship between the within group construct and the within group contribution of the total score for item <span class="math inline">\(j\)</span></li>
+<li><span class="math inline">\(\lambda_{ij}\)</span> is the strength of the relationship between the between group construct and the group contribution of the total score for item <span class="math inline">\(j\)</span></li>
+<li>the pattern of loadings of each level may be different</li>
+<li>the individual level loading matrix helps describe how individuals item response (or the level-1 units/respondents) are grouping together</li>
+<li>while the group level loading matrix helps describe how the average responses to items groups together</li>
+<li>I find it helpful to think of ML-CFA as a type of <strong>clustering model</strong> for the items/variables where we cluster items in two ways:
+<ol style="list-style-type: decimal">
+<li>by individual response</li>
+<li>by average responses to items</li>
+</ol></li>
+</ul></li>
+<li><span class="math inline">\(\eta\)</span> are the random effects typically interpreted as the amount of a latent variable
+<ul>
+<li><span class="math inline">\(\eta_{i}\)</span> is the individual level latent variable that varies over individuals within a group</li>
+<li><span class="math inline">\(\eta_{g}\)</span> is the group level latent variable that groups between groups so that all individuals within a group have the same value for this variable</li>
+<li>Confusingly, the latent variables don’t have to represent the same construct (rarely do they according to what seen published)</li>
+<li>If they do represent the same construct, then <span class="math inline">\(\lambda_{ij}=\lambda_{gj}\)</span> such that the group latent variable <span class="math inline">\(\eta_{g}\)</span> then represents the group level deviation on the latent variable
+<ul>
+<li>If the above happens to be true, the model simplifies to
+<span class="math display">\[y_{igj} = \tau_{igj} + \lambda_{j}(\eta_{i} + \eta_{g}) + \varepsilon_{ij} + \varepsilon_{gj}\]</span></li>
+</ul></li>
+</ul></li>
+<li><span class="math inline">\(\varepsilon\)</span> are the error terms associated with each level</li>
+</ul>
+<p>The full model, when put all together can be expressed inthe painful(ish) form of</p>
+<p><span class="math display">\[\mathbf{y}_{ig} = \boldsymbol{\tau}_{i} + \boldsymbol{\Lambda}_{i}\boldsymbol{\eta}_{i} + \boldsymbol{\tau}_g + \boldsymbol{\Lambda}_{g}\boldsymbol{\eta}_{g} + \boldsymbol{\varepsilon}_{i} + \boldsymbol{\varepsilon}_{g}\]</span>
+where this model can even be parameterized in a variety of different ways as well.
+Maybe I will dive in to those in a future spurt of random thoughts.</p>
+<p>Anyways, through learning about this model I have still wondered what other insights can be extracted.
+I still have much to learn about how these complex multilevel models can be used and in what other scenarios people find them useful.
+Anyone interested in these types of models may find the work of Laura Stapleton very enlightening and I highly recommend her 2016 piece on construct meaning.</p>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<ol style="list-style-type: decimal">
+<li><p>Renbarger, R. L., Padgett, R. N., Cowden, R. G., Govender, K., George, G., Makhnach, A.V., Novotny, J.S., Nugent, G., Rosenbaum, L., &amp; Kremenkova, L. (In Press). Culturally relevant resilience: A psychometric meta-analysis of the Child and Youth Resilience Measure (CYRM). .</p></li>
+<li><p>Stapleton, L. M., Yang, J. S., &amp; Hancock, G. R. (2016). Construct Meaning in Multilevel Settings. Journal of Educational and Behavioral Statistics, 41(5), 481–520. <a href="https://doi.org/10.3102/1076998616646200" class="uri">https://doi.org/10.3102/1076998616646200</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/2020-06-17-multilevel-factor-analysis/&amp;text=Multilevel%20Confirmatory%20Factor%20Analysis" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020-06-17-multilevel-factor-analysis/&amp;t=Multilevel%20Confirmatory%20Factor%20Analysis" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Multilevel%20Confirmatory%20Factor%20Analysis&amp;body=/post/2020-06-17-multilevel-factor-analysis/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-06-17-multilevel-factor-analysis/&amp;title=Multilevel%20Confirmatory%20Factor%20Analysis" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Multilevel%20Confirmatory%20Factor%20Analysis%20/post/2020-06-17-multilevel-factor-analysis/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/2020-06-17-multilevel-factor-analysis/&amp;title=Multilevel%20Confirmatory%20Factor%20Analysis" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hudf649bb64a8b4d76b1cb10eb635e4d5f_28488_250x250_fill_lanczos_center_2.png" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">R Noah Padgett</a></h5>
+      <h6 class="card-subtitle">PhD Student in Educational Psychology</h6>
+      <p class="card-text">My research focuses on the developement, evaluation and application of advanced statistics for the study of human behavor.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:noah_padgett1@baylor.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/rnoahpadgett" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=hZIADgEAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/noah-padgett" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/Padgett_CV.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-rnoahpadgett-netlify-com" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.3/mermaid.min.js" integrity="" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-rnoahpadgett-netlify-com.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    © 2020 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

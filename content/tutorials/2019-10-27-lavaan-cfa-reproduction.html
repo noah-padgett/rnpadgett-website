@@ -25,7 +25,7 @@ These data form a three factor model with 9 items.</p>
 <pre class="r"><code>set.seed(2)
 
 library(lavaan)</code></pre>
-<pre><code>## This is lavaan 0.6-5</code></pre>
+<pre><code>## This is lavaan 0.6-6</code></pre>
 <pre><code>## lavaan is BETA software! Please report any bugs.</code></pre>
 <pre class="r"><code>HS.model &lt;- &#39; visual  =~ x1 + x2 + x3
               textual =~ x4 + x5 + x6
@@ -33,7 +33,7 @@ library(lavaan)</code></pre>
 
 fit.la &lt;- cfa(HS.model, data = HolzingerSwineford1939)
 summary(fit.la, fit.measures = TRUE)</code></pre>
-<pre><code>## lavaan 0.6-5 ended normally after 35 iterations
+<pre><code>## lavaan 0.6-6 ended normally after 35 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -80,9 +80,9 @@ summary(fit.la, fit.measures = TRUE)</code></pre>
 ## 
 ## Parameter Estimates:
 ## 
+##   Standard errors                             Standard
 ##   Information                                 Expected
 ##   Information saturated (h1) model          Structured
-##   Standard errors                             Standard
 ## 
 ## Latent Variables:
 ##                    Estimate  Std.Err  z-value  P(&gt;|z|)
@@ -137,11 +137,9 @@ fit.la@optim$fx</code></pre>
 <div id="reproduced-fit-function" class="section level2">
 <h2>1. Reproduced Fit Function</h2>
 <p>Whenever I have read about CFA/SEM, I have been given this kind of vague idea on how estimation works.
-The general idea I have read/been talk is that there’s this fit function
-<span class="math display">\[
-F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]
-\]</span>
-where,</p>
+The general idea I have read/been talk is that there’s this fit function</p>
+<p><span class="math display">\[F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]\]</span></p>
+<p>where,</p>
 <ul>
 <li><span class="math inline">\(\mid . \mid\)</span> is the determinant of a matrix;</li>
 <li><span class="math inline">\(\mathbf{S}\)</span> is the sample covariance matrix;</li>

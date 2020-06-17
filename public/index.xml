@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Beyond-Stat</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Sat, 11 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020</copyright><lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Beyond-Stat</title>
@@ -51,6 +51,95 @@
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multilevel Confirmatory Factor Analysis</title>
+      <link>/post/2020-06-17-multilevel-factor-analysis/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-06-17-multilevel-factor-analysis/</guid>
+      <description>
+
+
+&lt;p&gt;Multilevel confirmatory factory analysis (ML-CFA) is a fancy analysis.
+So fancy in fact, I’m still not convinced if the analysis can be used properly.
+My interest in ML-CFA stemmed from a study a colleague and I did as part of a meta-analysis on a cross-cultural resilience measurement scale (Renbarger et al., In Press).
+Our aim was to use raw data from as many studies we could obtain and investigate the multilevel structure of the measure.
+The key result we were interested in was whether the measurement of the construct significantly varied across groups.
+We hypothesized that an invariant factor existed across levels (namely, resilience in youth).
+We investigated what proportion of variance in resilience was between groups compared to within group.
+This may sound familiar to an &lt;em&gt;intraclass correlation&lt;/em&gt; from traditional multilevel modeling, and if fact this is what we were interested in (or at the very least I was lol).
+Basically, the analysis boiled down to me being confused about how the actually use ML-CFA.
+So, here is my understanding(-ish) of a basic(-ish) &lt;strong&gt;multilevel factor analysis model&lt;/strong&gt;.&lt;/p&gt;
+&lt;div id=&#34;the-model&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The Model&lt;/h1&gt;
+&lt;p&gt;The model at it’s core feels quite intuitive.
+The model starts with saying that the all items/indicators is a combination of individual component (&lt;span class=&#34;math inline&#34;&gt;\(y_{i}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(y_{individual}\)&lt;/span&gt;) and a group average component (&lt;span class=&#34;math inline&#34;&gt;\(y_{g}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(y_{group}\)&lt;/span&gt;):&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[y_{ig} = y_{i} + y_{g}\]&lt;/span&gt;
+or equivalently,
+&lt;span class=&#34;math display&#34;&gt;\[y_{total} = y_{individual} + y_{group}\]&lt;/span&gt;
+The group component to individual items can be thought of as the &lt;em&gt;average&lt;/em&gt; for the group.
+In factor analysis though, we usually have many items that are reflective of some underlying construct of interest (e.g., youth resilience, motivation, perceived degree of safety, etc.).
+When we have multiple items/indicators we have to replace our nice simple additive pieces into a sum of multivariate pieces (say for &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; items),&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbf{y}_{ig} = \mathbf{y}_{i} + \mathbf{y}_{g}\]&lt;/span&gt;
+where each is a vector of length &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt;.
+Part of the purpose of factor analysis is to develop a theoretical model for how each component contributes to the total observed score on each item.
+Hence, the connection to factor analysis.
+For a single item &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;, the observed score is a partial manifestation of the underlying construct of interest.
+This results in a decomposition of the observed score into the individual (within group) contribution and the group effect
+&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}
+y_{ij} &amp;amp;= \tau_{ij} + \lambda_{ij}\eta_{i} + \varepsilon_{ij}\\ 
+y_{gj} &amp;amp;= \tau_{gj} + \lambda_{gj}\eta_{g} + \varepsilon_{gj}
+\end{align*}\]&lt;/span&gt;
+where&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau\)&lt;/span&gt; is the intercepts at each level:
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{ij}\)&lt;/span&gt; is the within group average response to item &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\tau_{ij}\)&lt;/span&gt; is the between group or &lt;em&gt;grand mean&lt;/em&gt; response to item &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; are the factor loadings that relate the construct(s) to items
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\lambda_{ij}\)&lt;/span&gt; is the strength of the relationship between the within group construct and the within group contribution of the total score for item &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\lambda_{ij}\)&lt;/span&gt; is the strength of the relationship between the between group construct and the group contribution of the total score for item &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;the pattern of loadings of each level may be different&lt;/li&gt;
+&lt;li&gt;the individual level loading matrix helps describe how individuals item response (or the level-1 units/respondents) are grouping together&lt;/li&gt;
+&lt;li&gt;while the group level loading matrix helps describe how the average responses to items groups together&lt;/li&gt;
+&lt;li&gt;I find it helpful to think of ML-CFA as a type of &lt;strong&gt;clustering model&lt;/strong&gt; for the items/variables where we cluster items in two ways:
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;by individual response&lt;/li&gt;
+&lt;li&gt;by average responses to items&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\eta\)&lt;/span&gt; are the random effects typically interpreted as the amount of a latent variable
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\eta_{i}\)&lt;/span&gt; is the individual level latent variable that varies over individuals within a group&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\eta_{g}\)&lt;/span&gt; is the group level latent variable that groups between groups so that all individuals within a group have the same value for this variable&lt;/li&gt;
+&lt;li&gt;Confusingly, the latent variables don’t have to represent the same construct (rarely do they according to what seen published)&lt;/li&gt;
+&lt;li&gt;If they do represent the same construct, then &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{ij}=\lambda_{gj}\)&lt;/span&gt; such that the group latent variable &lt;span class=&#34;math inline&#34;&gt;\(\eta_{g}\)&lt;/span&gt; then represents the group level deviation on the latent variable
+&lt;ul&gt;
+&lt;li&gt;If the above happens to be true, the model simplifies to
+&lt;span class=&#34;math display&#34;&gt;\[y_{igj} = \tau_{igj} + \lambda_{j}(\eta_{i} + \eta_{g}) + \varepsilon_{ij} + \varepsilon_{gj}\]&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\varepsilon\)&lt;/span&gt; are the error terms associated with each level&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The full model, when put all together can be expressed inthe painful(ish) form of&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\mathbf{y}_{ig} = \boldsymbol{\tau}_{i} + \boldsymbol{\Lambda}_{i}\boldsymbol{\eta}_{i} + \boldsymbol{\tau}_g + \boldsymbol{\Lambda}_{g}\boldsymbol{\eta}_{g} + \boldsymbol{\varepsilon}_{i} + \boldsymbol{\varepsilon}_{g}\]&lt;/span&gt;
+where this model can even be parameterized in a variety of different ways as well.
+Maybe I will dive in to those in a future spurt of random thoughts.&lt;/p&gt;
+&lt;p&gt;Anyways, through learning about this model I have still wondered what other insights can be extracted.
+I still have much to learn about how these complex multilevel models can be used and in what other scenarios people find them useful.
+Anyone interested in these types of models may find the work of Laura Stapleton very enlightening and I highly recommend her 2016 piece on construct meaning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Renbarger, R. L., Padgett, R. N., Cowden, R. G., Govender, K., George, G., Makhnach, A.V., Novotny, J.S., Nugent, G., Rosenbaum, L., &amp;amp; Kremenkova, L. (In Press). Culturally relevant resilience: A psychometric meta-analysis of the Child and Youth Resilience Measure (CYRM). .&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Stapleton, L. M., Yang, J. S., &amp;amp; Hancock, G. R. (2016). Construct Meaning in Multilevel Settings. Journal of Educational and Behavioral Statistics, 41(5), 481–520. &lt;a href=&#34;https://doi.org/10.3102/1076998616646200&#34; class=&#34;uri&#34;&gt;https://doi.org/10.3102/1076998616646200&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -350,7 +439,7 @@ ggplot()+
     </item>
     
     <item>
-      <title>Multilevel CFA with Ordered Categorical Data: A Simulation Study Comparing Fit Indices Across Robust Estimation Methods</title>
+      <title>Multilevel CFA with crdered categorical sata: A simulation study comparing fit indices across robust estimation methods</title>
       <link>/publication/padgett2020a/</link>
       <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/publication/padgett2020a/</guid>
@@ -384,7 +473,7 @@ ggplot()+
     <item>
       <title>Stress and subjective life expectancy: cross-sectional and longitudinal associations in early adolescence</title>
       <link>/publication/mckay2020/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 -0600</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 -0500</pubDate>
       <guid>/publication/mckay2020/</guid>
       <description></description>
     </item>
@@ -409,7 +498,7 @@ These data form a three factor model with 9 items.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(2)
 
 library(lavaan)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is lavaan 0.6-5&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## This is lavaan 0.6-6&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## lavaan is BETA software! Please report any bugs.&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;HS.model &amp;lt;- &amp;#39; visual  =~ x1 + x2 + x3
               textual =~ x4 + x5 + x6
@@ -417,7 +506,7 @@ library(lavaan)&lt;/code&gt;&lt;/pre&gt;
 
 fit.la &amp;lt;- cfa(HS.model, data = HolzingerSwineford1939)
 summary(fit.la, fit.measures = TRUE)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## lavaan 0.6-5 ended normally after 35 iterations
+&lt;pre&gt;&lt;code&gt;## lavaan 0.6-6 ended normally after 35 iterations
 ## 
 ##   Estimator                                         ML
 ##   Optimization method                           NLMINB
@@ -464,9 +553,9 @@ summary(fit.la, fit.measures = TRUE)&lt;/code&gt;&lt;/pre&gt;
 ## 
 ## Parameter Estimates:
 ## 
+##   Standard errors                             Standard
 ##   Information                                 Expected
 ##   Information saturated (h1) model          Structured
-##   Standard errors                             Standard
 ## 
 ## Latent Variables:
 ##                    Estimate  Std.Err  z-value  P(&amp;gt;|z|)
@@ -521,11 +610,9 @@ fit.la@optim$fx&lt;/code&gt;&lt;/pre&gt;
 &lt;div id=&#34;reproduced-fit-function&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;1. Reproduced Fit Function&lt;/h2&gt;
 &lt;p&gt;Whenever I have read about CFA/SEM, I have been given this kind of vague idea on how estimation works.
-The general idea I have read/been talk is that there’s this fit function
-&lt;span class=&#34;math display&#34;&gt;\[
-F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]
-\]&lt;/span&gt;
-where,&lt;/p&gt;
+The general idea I have read/been talk is that there’s this fit function&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[F_{ML} = \frac{1}{2}\left[\log\mid\mathbf{\Sigma}(\theta)\mid - \log\mid \mathbf{S}\mid + tr\left(\mathbf{S}\mathbf{\Sigma}^{-1}(\theta)\right) - p\right]\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where,&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mid . \mid\)&lt;/span&gt; is the determinant of a matrix;&lt;/li&gt;
 &lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(\mathbf{S}\)&lt;/span&gt; is the sample covariance matrix;&lt;/li&gt;
@@ -897,7 +984,7 @@ fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&l
     <item>
       <title>NCAA In-Season Coaching Time Regulations Negate Strength and Conditioning Gains inWomen&#39;s Division-II Basketball Team</title>
       <link>/publication/papadakis2019/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 -0400</pubDate>
       <guid>/publication/papadakis2019/</guid>
       <description></description>
     </item>
@@ -913,7 +1000,7 @@ fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&l
     <item>
       <title>An examination of sensitivity to measurement error of Rasch residual-based fit statistics</title>
       <link>/publication/padgett2019a/</link>
-      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0400</pubDate>
       <guid>/publication/padgett2019a/</guid>
       <description></description>
     </item>
@@ -921,7 +1008,7 @@ fit &amp;lt;- stan(file = &amp;#39;8schools.stan&amp;#39;, data = schools_dat)&l
     <item>
       <title>Exploration of the vaginal and gut microbiome in African American women by body mass index, class of obesity, and gestational weight gain: A pilot study</title>
       <link>/publication/faucher2019/</link>
-      <pubDate>Sat, 08 Jun 2019 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 -0400</pubDate>
       <guid>/publication/faucher2019/</guid>
       <description></description>
     </item>
@@ -3465,7 +3552,7 @@ In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
     <item>
       <title>Gut microbiome meta-analysis reveals dysbiosis is independent of body mass index in predicting risk of obesityassociated CRC</title>
       <link>/publication/greathouse2019/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0500</pubDate>
       <guid>/publication/greathouse2019/</guid>
       <description></description>
     </item>
@@ -3473,7 +3560,7 @@ In the posts and tutorials to come I will discuss topics such as&lt;/p&gt;
     <item>
       <title>Mental health best practices in NCAA: The bidirectional relationship between mental toughness and self-compassion</title>
       <link>/publication/padgett2019b/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 -0600</pubDate>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 -0500</pubDate>
       <guid>/publication/padgett2019b/</guid>
       <description></description>
     </item>
@@ -3897,7 +3984,7 @@ Also, this where many of my trial-and-error attempts are also given and maybe th
     <item>
       <title>Interaction between the microbiome and TP53 in human lung cancer</title>
       <link>/publication/greathouse2018/</link>
-      <pubDate>Wed, 01 Aug 2018 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Aug 2018 00:00:00 -0400</pubDate>
       <guid>/publication/greathouse2018/</guid>
       <description></description>
     </item>
@@ -3923,7 +4010,7 @@ Also, this where many of my trial-and-error attempts are also given and maybe th
     <item>
       <title>Estimation of zero-inflated population mean: A bootstrapping approach</title>
       <link>/publication/paneru2018/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
       <guid>/publication/paneru2018/</guid>
       <description></description>
     </item>

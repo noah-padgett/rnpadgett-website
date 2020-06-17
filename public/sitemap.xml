@@ -19,7 +19,12 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-12T02:08:04-05:00</lastmod>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-06-17-multilevel-factor-analysis/</loc>
+    <lastmod>2020-06-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,8 +38,8 @@
   </url>
   
   <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2020-02-17T11:20:48-06:00</lastmod>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-02-16T12:13:02-06:00</lastmod>
   </url>
   
   <url>
@@ -43,7 +48,7 @@
   </url>
   
   <url>
-    <loc>/tags/categorical/</loc>
+    <loc>/tags/categorical-data/</loc>
     <lastmod>2020-02-16T12:13:02-06:00</lastmod>
   </url>
   
@@ -80,6 +85,11 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2020-04-12T02:08:04-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/3/</loc>
+    <lastmod>2020-02-17T11:20:48-06:00</lastmod>
   </url>
   
   <url>
@@ -134,11 +144,6 @@
   
   <url>
     <loc>/authors/papadakis-z.-padgett-r.-n.-stamatis-a.-karasch-r./</loc>
-    <lastmod>2020-02-15T16:27:22-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
     <lastmod>2020-02-15T16:27:22-06:00</lastmod>
   </url>
   
@@ -268,12 +273,12 @@
   </url>
   
   <url>
-    <loc>/tags/simulation/</loc>
+    <loc>/categories/simulation/</loc>
     <lastmod>2020-04-12T02:08:04-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/simulation/</loc>
+    <loc>/tags/simulation/</loc>
     <lastmod>2020-04-12T02:08:04-05:00</lastmod>
   </url>
   

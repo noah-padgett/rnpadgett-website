@@ -2601,7 +2601,7 @@ sample(x=population, size=10, prob = outcomeProb, replace = T)
     <item>
       <title>Estimation of zero-inflated population mean: A bootstrapping approach</title>
       <link>/publication/paneru2018/</link>
-      <pubDate>Tue, 01 May 2018 00:00:00 -0500</pubDate>
+      <pubDate>Tue, 01 May 2018 00:00:00 -0400</pubDate>
       <guid>/publication/paneru2018/</guid>
       <description></description>
     </item>
